@@ -844,6 +844,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_LINKING_CORD] = {gItemIcon_LinkingCord, gItemIconPalette_LinkingCord},
     [ITEM_PEAT_BLOCK] = {gItemIcon_PeatBlock, gItemIconPalette_PeatBlock},
     [ITEM_BERSERK_GENE] = {gItemIcon_BerserkGene, gItemIconPalette_BerserkGene},
+<<<<<<< HEAD
     [ITEM_FAIRY_FEATHER] = {gItemIcon_FairyFeather, gItemIconPalette_FairyFeather},
     [ITEM_SYRUPY_APPLE] = {gItemIcon_SyrupyApple, gItemIconPalette_SyrupyApple},
     [ITEM_UNREMARKABLE_TEACUP] = {gItemIcon_UnremarkableTeacup, gItemIconPalette_UnremarkableTeacup},
@@ -859,7 +860,9 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_SWIFT_MOCHI] =  {gItemIcon_Mochi, gItemIconPalette_SwiftMochi},
     [ITEM_FRESH_START_MOCHI] =  {gItemIcon_Mochi, gItemIconPalette_FreshStartMochi},
     [ITEM_GLIMMERING_CHARM] = {gItemIcon_GlimmeringCharm, gItemIconPalette_GlimmeringCharm},
+=======
     [ITEM_POKE_VIAL] = {gItemIcon_Pokevial, gItemIconPalette_Pokevial},
+>>>>>>> 986365b2d... pokevial by caco5400
     // Return to field arrow
     [ITEMS_COUNT] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

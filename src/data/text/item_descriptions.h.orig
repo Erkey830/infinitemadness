@@ -3919,10 +3919,7 @@ static const u8 sBerserkGene[] = _(
     "Attack, but causes\n"
     "lasting confusion.");
 
-static const u8 sPokeVialDesc[] = _(
-    "Restaura los PS\n"
-    "del equipo POKéMON.");
-
+<<<<<<< HEAD
 static const u8 sFairyFeatherDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
@@ -3997,3 +3994,8 @@ static const u8 sGlimmeringCharmDesc[] = _(
     "A charm that will\n"
     "raise the shards\n"
     "from Tera Raids.");
+=======
+static const u8 sPokeVialDesc[] = _(
+    "Restaura los PS\n"
+    "del equipo POKéMON.");
+>>>>>>> 986365b2d... pokevial by caco5400

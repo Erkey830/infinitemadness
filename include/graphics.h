@@ -10094,6 +10094,9 @@ extern const u32 gItemIconPalette_CornerstoneMask[];
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 
+extern const u32 gItemIcon_Pokevial[];
+extern const u32 gItemIconPalette_Pokevial[];
+
 //menu graphics
 extern const u16 gMenuInfoElements1_Pal[16];
 extern const u16 gMenuInfoElements2_Pal[16];

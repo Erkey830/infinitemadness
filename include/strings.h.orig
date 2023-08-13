@@ -3049,14 +3049,16 @@ extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
+<<<<<<< HEAD
 // Exp. Share
 extern const u8 gText_ExpShareOn[];
 extern const u8 gText_ExpShareOff[];
 
 extern const u8 gText_BasePointsResetToZero[];
-
+=======
 //POKEVIAL
 extern const u8 gText_PokeVial[];
 extern const u8 gText_WithOutUsesPokeVial[];
+>>>>>>> 986365b2d... pokevial by caco5400
 
 #endif // GUARD_STRINGS_H

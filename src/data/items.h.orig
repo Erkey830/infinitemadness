@@ -9645,6 +9645,7 @@ const struct Item gItems[] =
         .flingPower = 10,
     },
 
+<<<<<<< HEAD
     [ITEM_FAIRY_FEATHER] =
     {
         .name = _("Fairy Feather"),
@@ -9813,8 +9814,7 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
-
+=======
     [ITEM_POKE_VIAL] =
     {
         .name = _("POKEVIAL"),
@@ -9825,5 +9825,6 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
+>>>>>>> 986365b2d... pokevial by caco5400
     },
 };

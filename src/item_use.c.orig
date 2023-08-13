@@ -44,8 +44,11 @@
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/songs.h"
+<<<<<<< HEAD
 #include "constants/map_types.h"
+=======
 #include "script_pokemon_util.h"
+>>>>>>> 986365b2d... pokevial by caco5400
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
