@@ -194,7 +194,7 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_PLAYER]          = {gText_MenuPlayer,  {.u8_void = StartMenuPlayerNameCallback}},
     [MENU_ACTION_SAVE]            = {gText_MenuSave,    {.u8_void = StartMenuSaveCallback}},
     [MENU_ACTION_OPTION]          = {gText_MenuOption,  {.u8_void = StartMenuOptionCallback}},
-    // [MENU_ACTION_EXIT]            = {gText_MenuExit,    {.u8_void = StartMenuExitCallback}},
+    //[MENU_ACTION_EXIT]            = {gText_MenuExit,    {.u8_void = StartMenuExitCallback}},
     [MENU_ACTION_RETIRE_SAFARI]   = {gText_MenuRetire,  {.u8_void = StartMenuSafariZoneRetireCallback}},
     [MENU_ACTION_PLAYER_LINK]     = {gText_MenuPlayer,  {.u8_void = StartMenuLinkModePlayerNameCallback}},
     [MENU_ACTION_REST_FRONTIER]   = {gText_MenuRest,    {.u8_void = StartMenuSaveCallback}},
@@ -345,7 +345,7 @@ static void BuildNormalStartMenu(void)
     AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
-    // AddStartMenuAction(MENU_ACTION_EXIT);
+  //   AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
 static void BuildDebugStartMenu(void)
@@ -386,7 +386,7 @@ static void BuildLinkModeStartMenu(void)
 
     AddStartMenuAction(MENU_ACTION_PLAYER_LINK);
     AddStartMenuAction(MENU_ACTION_OPTION);
-    // AddStartMenuAction(MENU_ACTION_EXIT);
+   // AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
 static void BuildUnionRoomStartMenu(void)
@@ -421,7 +421,7 @@ static void BuildBattlePyramidStartMenu(void)
     AddStartMenuAction(MENU_ACTION_REST_FRONTIER);
     AddStartMenuAction(MENU_ACTION_RETIRE_FRONTIER);
     AddStartMenuAction(MENU_ACTION_OPTION);
-    // AddStartMenuAction(MENU_ACTION_EXIT);
+   // AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
 static void BuildMultiPartnerRoomStartMenu(void)
@@ -512,7 +512,8 @@ static void RemoveExtraStartMenuWindows(void)
 
 #define TAG_ICONS_MENU 0x3333
 
-#define INITIAL_POS_RIGHT_X 232 
+#define INITIAL_POS_RIGHT_X 40 
+#define INITIAL_POS_DOWN_Y 140
 
 static const u16 sIconsMenuPal[] = INCBIN_U16("graphics/start_menu/menuIconPal.gbapal");
 static const u8 sIconMenuSprites[] = INCBIN_U8("graphics/start_menu/iconMenu.4bpp");
@@ -538,7 +539,7 @@ static const struct OamData gSpriteOamData32 =
 static const struct SpriteSheet spriteSheetIconsMenu =
 {
             .data = sIconMenuSprites, //GRÁFICO ----------
-            .size = 3584, //TAMAÑO DEL GRÁFICO
+            .size = 4608, //TAMAÃ‘O DEL GRÃFICO
             .tag = TAG_ICONS_MENU, //LUGAR DONDE SE CARGA EL GRÁFICO ----------
 };
 static const struct SpritePalette spritePaletteIconsMenu =
@@ -547,7 +548,7 @@ static const struct SpritePalette spritePaletteIconsMenu =
             .tag = TAG_ICONS_MENU, //LUGAR DONDE SE CARGA LA PALETA ----------
 };
 
-static const union AnimCmd sAnimDex[] =
+static const union AnimCmd sAnimDex[] = //cambiar de
 {
     ANIMCMD_FRAME(0, 0),
     ANIMCMD_END,
@@ -566,35 +567,49 @@ static const union AnimCmd sAnimBag[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimCard[] =
+static const union AnimCmd sAnimNav[] =
 {
     ANIMCMD_FRAME(48, 0),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimSave[] =
+static const union AnimCmd sAnimQuest[] =
 {
     ANIMCMD_FRAME(64, 0),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimOption[] =
+static const union AnimCmd sAnimCard[] =
 {
     ANIMCMD_FRAME(80, 0),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimRetire[] =
+static const union AnimCmd sAnimSave[] =
 {
     ANIMCMD_FRAME(96, 0),
     ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnimsIconMenu[] =
+static const union AnimCmd sAnimOption[] =
+{
+    ANIMCMD_FRAME(112, 0),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnimRetire[] =
+{
+    ANIMCMD_FRAME(128, 0),
+    ANIMCMD_END,
+};
+
+ static const union AnimCmd *const sAnimsIconMenu[] =
 {
     [MENU_ACTION_POKEDEX] = sAnimDex,
     [MENU_ACTION_POKEMON] = sAnimBall,
     [MENU_ACTION_BAG] = sAnimBag,
+    [MENU_ACTION_POKENAV] = sAnimNav,
+    [MENU_ACTION_QUEST_MENU] = sAnimQuest,
     [MENU_ACTION_PLAYER] = sAnimCard,
     [MENU_ACTION_SAVE] = sAnimSave,
     [MENU_ACTION_OPTION] = sAnimOption,
@@ -614,25 +629,33 @@ static const struct SpriteTemplate spriteTemplateIconsMenu =
 
 static void MoveSelectSpriteIcon()
 {
-    if(gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].x != INITIAL_POS_RIGHT_X)
-        gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].x += INITIAL_POS_RIGHT_X - gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].x;
+    if(gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].y != INITIAL_POS_DOWN_Y)
+        gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].y += INITIAL_POS_DOWN_Y - gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].y;
     else
-        gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].x -= 8;
+        gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].y -= 20;
 }
 void LoadSpriteIconMenu()
 {
     s8 i;
     u8 id;
-    u8 y = 14;
+    u8 x = 50;
+    u8 y = INITIAL_POS_DOWN_Y;
+
+    if(sNumStartMenuActions ==4) x=70;
+    if(sNumStartMenuActions ==5) x=60;
+    if(sNumStartMenuActions ==6) x=50;
+    if(sNumStartMenuActions ==7) x=30;
+    if(sNumStartMenuActions ==8) x=19;
 
     LoadSpriteSheet(&spriteSheetIconsMenu);
     LoadSpritePalette(&spritePaletteIconsMenu);
 
     for (i = 0; i < sNumStartMenuActions; i++)
     {
-        id = CreateSprite(&spriteTemplateIconsMenu, INITIAL_POS_RIGHT_X, y, 0);
+        id = CreateSprite(&spriteTemplateIconsMenu, x, INITIAL_POS_DOWN_Y, 0);
+        x += 30;
         StartSpriteAnim(&gSprites[id], sCurrentStartMenuActions[i]);
-        y += 26;
+        y -= 32;
         sStartMenuSpritesId[i] = id;
     }
 }
@@ -770,7 +793,7 @@ void ShowStartMenu(void)
 
 static bool8 HandleStartMenuInput(void)
 {
-    if (JOY_NEW(DPAD_UP))
+    if (JOY_NEW(DPAD_LEFT))
     {
         PlaySE(SE_SELECT);
         // sStartMenuCursorPos = Menu_MoveCursor(-1);
@@ -779,7 +802,7 @@ static bool8 HandleStartMenuInput(void)
         MoveSelectSpriteIcon();
     }
 
-    if (JOY_NEW(DPAD_DOWN))
+    if (JOY_NEW(DPAD_RIGHT))
     {
         PlaySE(SE_SELECT);
         // sStartMenuCursorPos = Menu_MoveCursor(1);
