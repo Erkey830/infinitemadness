@@ -1088,7 +1088,7 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
         MegaIndicator_SetVisibilities(healthboxSpriteId, TRUE);
     }
 
-    windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, xPos, 3, HEALTHBOX_DARK_GRAY, &windowId);
+    windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, xPos, 3, HEALTHBOX_TRANSPARENT, &windowId);
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
 
     if (GetBattlerSide(battler) == B_SIDE_PLAYER)
@@ -1104,7 +1104,7 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
         objVram = (void *)(OBJ_VRAM0);
         objVram += spriteTileNum + 0x400;
     }
-    //TextIntoHealthboxObject(objVram, windowTileData, 3);
+    TextIntoHealthboxObject(objVram, windowTileData, 3); //PRINTEAR LV DEL PKMN
     RemoveWindowOnHealthbox(windowId);
 }
 
@@ -1394,8 +1394,8 @@ void ChangeMegaTriggerSprite(u8 spriteId, u8 animId)
 
 #define SINGLES_MEGA_TRIGGER_POS_X_OPTIMAL (30)
 #define SINGLES_MEGA_TRIGGER_POS_X_PRIORITY (31)
-#define SINGLES_MEGA_TRIGGER_POS_X_SLIDE (15)
-#define SINGLES_MEGA_TRIGGER_POS_Y_DIFF (-11)
+#define SINGLES_MEGA_TRIGGER_POS_X_SLIDE (20)
+#define SINGLES_MEGA_TRIGGER_POS_Y_DIFF (-7)
 
 #define DOUBLES_MEGA_TRIGGER_POS_X_OPTIMAL (30)
 #define DOUBLES_MEGA_TRIGGER_POS_X_PRIORITY (31)
@@ -2910,16 +2910,16 @@ static u8 *AddTextPrinterAndCreateWindowOnHealthbox(const u8 *str, u32 x, u32 y,
         color[0] = bgColor;
         color[1] = HEALTHBOX_WHITE;
         color[2] = HEALTHBOX_DARK_GRAY_2;
-        AddTextPrinterParameterized4(winId, FONT_SMALL, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+        AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
     }
     else { // hp text
         color[0] = bgColor;
         color[1] = HEALTHBOX_WHITE;
         color[2] = HEALTHBOX_GRAY;
-        AddTextPrinterParameterized4(winId, FONT_SMALL_NARROW, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+        AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
     }
 
-    AddTextPrinterParameterized4(winId, FONT_SMALL, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+    //AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
 
     *windowId = winId;
     return (u8 *)(GetWindowAttribute(winId, WINDOW_TILE_DATA));
