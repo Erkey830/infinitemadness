@@ -254,7 +254,7 @@ static void BuildMultiPartnerRoomStartMenu(void);
 static void ShowSafariBallsWindow(void);
 static void ShowPyramidFloorWindow(void);
 static void RemoveExtraStartMenuWindows(void);
-static bool32 PrintStartMenuActions(s8 *pIndex, u32 count);
+//static bool32 PrintStartMenuActions(s8 *pIndex, u32 count);
 static bool32 InitStartMenuStep(void);
 static void InitStartMenu(void);
 static void CreateStartMenuTask(TaskFunc followupFunc);
@@ -473,36 +473,36 @@ static void RemoveExtraStartMenuWindows(void)
     }
 }
 
-static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
-{
-    s8 index = *pIndex;
-
-    do
-    {
-        if (sStartMenuItems[sCurrentStartMenuActions[index]].func.u8_void == StartMenuPlayerNameCallback)
-        {
-            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 8, (index << 4) + 9);
-        }
-        else
-        {
-            StringExpandPlaceholders(gStringVar4, sStartMenuItems[sCurrentStartMenuActions[index]].text);
-            AddTextPrinterParameterized(GetStartMenuWindowId(), FONT_NORMAL, gStringVar4, 8, (index << 4) + 9, TEXT_SKIP_DRAW, NULL);
-        }
-
-        index++;
-        if (index >= sNumStartMenuActions)
-        {
-            *pIndex = index;
-            return TRUE;
-        }
-
-        count--;
-    }
-    while (count != 0);
-
-    *pIndex = index;
-    return FALSE;
-}
+//static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
+//{
+//    s8 index = *pIndex;
+// 
+//     do
+//     {
+//         if (sStartMenuItems[sCurrentStartMenuActions[index]].func.u8_void == StartMenuPlayerNameCallback)
+//         {
+//            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 8, (index << 4) + 9);
+//        }
+//        else
+//        {
+//            StringExpandPlaceholders(gStringVar4, sStartMenuItems[sCurrentStartMenuActions[index]].text);
+//            AddTextPrinterParameterized(GetStartMenuWindowId(), FONT_NORMAL, gStringVar4, 8, (index << 4) + 9, TEXT_SKIP_DRAW, NULL);
+//        }
+//
+//        index++;
+//        if (index >= sNumStartMenuActions)
+//        {
+//            *pIndex = index;
+//            return TRUE;
+//        }
+//
+//        count--;
+//    }
+//    while (count != 0);
+//
+//    *pIndex = index;
+//    return FALSE;
+//}
 
 
 //**********************************************
