@@ -556,8 +556,8 @@ static void RemoveExtraStartMenuWindows(void)
     }
     else
     {
-        ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-        // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+        ClearStdWindowAndFrameToTransparent(sStartClockWindowId, TRUE);
+        CopyWindowToVram(sStartClockWindowId, 3);
         RemoveWindow(sStartClockWindowId);
     }
 }
@@ -933,8 +933,8 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
-    RemoveExtraStartMenuWindows();
-    ShowTimeWindow();
+    // RemoveExtraStartMenuWindows();
+    // ShowTimeWindow();
     return FALSE;
 }
 

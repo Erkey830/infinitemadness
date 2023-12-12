@@ -474,13 +474,13 @@ static void ShowPyramidFloorWindow(void)
 // If you want to shorten the dates to Sat., Sun., etc., change this to 70
 #define CLOCK_WINDOW_WIDTH 104
 
-const u8 gText_Saturday[] = _("Saturday,");
-const u8 gText_Sunday[] = _("Sunday,");
-const u8 gText_Monday[] = _("Monday,");
-const u8 gText_Tuesday[] = _("Tuesday,");
-const u8 gText_Wednesday[] = _("Wednesday,");
-const u8 gText_Thursday[] = _("Thursday,");
-const u8 gText_Friday[] = _("Friday,");
+const u8 gText_Saturday[] = _("Sábado,");
+const u8 gText_Sunday[] = _("Domingo,");
+const u8 gText_Monday[] = _("Lunes,");
+const u8 gText_Tuesday[] = _("Martes,");
+const u8 gText_Wednesday[] = _("Miércoles,");
+const u8 gText_Thursday[] = _("Jueves,");
+const u8 gText_Friday[] = _("Viernes,");
 
 const u8 *const gDayNameStringsTable[7] = {
     gText_Saturday,
@@ -554,8 +554,17 @@ static void RemoveExtraStartMenuWindows(void)
         ClearStdWindowAndFrameToTransparent(sBattlePyramidFloorWindowId, FALSE);
         RemoveWindow(sBattlePyramidFloorWindowId);
     }
+    else
+    {
 <<<<<<< HEAD
-        CopyWindowToVram(sSafariBallsWindowId, 3);
+        ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
+        // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+=======
+        ClearStdWindowAndFrameToTransparent(sStartClockWindowId, TRUE);
+        CopyWindowToVram(sStartClockWindowId, 3);
+>>>>>>> 05e40f1112cd3c38e79942171f82012ecd28fb8f
+        RemoveWindow(sStartClockWindowId);
+    }
 }
 
 //static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
@@ -618,15 +627,6 @@ static const struct OamData gSpriteOamData32 =
     .paletteNum = 0, 
     .affineParam = 0, 
 };
-=======
-    else
-    {
-        ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-        // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
-        RemoveWindow(sStartClockWindowId);
-    }
-}
->>>>>>> b51fb8ad9f5b64ee0435dfd49cafb47f1b06feae
 
 
 static const struct SpriteSheet spriteSheetIconsMenu =
@@ -795,27 +795,18 @@ static bool32 InitStartMenuStep(void)
         sInitStartMenuData[0]++;
         break;
     case 4:
-<<<<<<< HEAD
-        // if (PrintStartMenuActions(&sInitStartMenuData[1], 2))
-            LoadSpriteIconMenu();
-            sInitStartMenuData[0]++;
-        break;
-    case 5:
-        // sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, 0, 9, 16, sNumStartMenuActions, sStartMenuCursorPos);
-        // CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
-        MoveSelectSpriteIcon();
-=======
         ShowTimeWindow();
+            LoadSpriteIconMenu();
         sInitStartMenuData[0]++;
         break;
     case 5:
-        if (PrintStartMenuActions(&sInitStartMenuData[1], 2))
+        //if (PrintStartMenuActions(&sInitStartMenuData[1], 2))
             sInitStartMenuData[0]++;
         break;
     case 6:
-        sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, 0, 9, 16, sNumStartMenuActions, sStartMenuCursorPos);
+        //sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, 0, 9, 16, sNumStartMenuActions, sStartMenuCursorPos);
+        MoveSelectSpriteIcon();
         CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
->>>>>>> b51fb8ad9f5b64ee0435dfd49cafb47f1b06feae
         return TRUE;
     }
 
@@ -947,8 +938,13 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
+<<<<<<< HEAD
     RemoveExtraStartMenuWindows();
     ShowTimeWindow();
+=======
+    // RemoveExtraStartMenuWindows();
+    // ShowTimeWindow();
+>>>>>>> 05e40f1112cd3c38e79942171f82012ecd28fb8f
     return FALSE;
 }
 
