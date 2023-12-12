@@ -56,6 +56,8 @@
 #include "constants/union_room.h"
 #include "constants/weather.h"
 
+#include "day_night.h"
+#include "constants/day_night.h"
 #if P_FRIENDSHIP_EVO_THRESHOLD >= GEN_9
 #define FRIENDSHIP_EVO_THRESHOLD 160
 #else
@@ -3831,7 +3833,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 break;
             case EVO_FRIENDSHIP_DAY:
                 if (GetTimeOfDay() != TIME_NIGHT && friendship >= FRIENDSHIP_EVO_THRESHOLD)
-                    targetSpecies = evolutions[i].targetSpecies;
+                if (GetCurrentTimeOfDay() != TIME_NIGHT && friendship >= 220)
                 break;
             case EVO_LEVEL_DAY:
                 if (GetTimeOfDay() != TIME_NIGHT && evolutions[i].param <= level)
@@ -3839,7 +3841,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 break;
             case EVO_FRIENDSHIP_NIGHT:
                 if (GetTimeOfDay() == TIME_NIGHT && friendship >= FRIENDSHIP_EVO_THRESHOLD)
-                    targetSpecies = evolutions[i].targetSpecies;
+                if (GetCurrentTimeOfDay() == TIME_NIGHT && friendship >= 220)
                 break;
             case EVO_LEVEL_NIGHT:
                 if (GetTimeOfDay() == TIME_NIGHT && evolutions[i].param <= level)
