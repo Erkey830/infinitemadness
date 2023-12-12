@@ -3991,25 +3991,6 @@ void FieldEffectScript_LoadPaletteDayNight(u8 **script)
     (*script) += 4;
 }
 
-u32 FldEff_UseVsSeeker(void)
-{
-    CreateTask(Task_FldEffUseVsSeeker, 0xFF);
-    return 0;
-}
-
-static void Task_FldEffUseVsSeeker(u8 taskId)
-{
-    sUseVsSeekerEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId]);
-}
-
-static void UseVsSeeker_StopPlayerMovement(struct Task *task)
-{
-    LockPlayerFieldControls();
-    FreezeObjectEvents();
-    gPlayerAvatar.preventStep = TRUE;
-    task->data[0]++;
-}
-
 static void UseVsSeeker_DoPlayerAnimation(struct Task *task)
 {
     struct ObjectEvent * playerObj = &gObjectEvents[gPlayerAvatar.objectEventId];
