@@ -474,13 +474,13 @@ static void ShowPyramidFloorWindow(void)
 // If you want to shorten the dates to Sat., Sun., etc., change this to 70
 #define CLOCK_WINDOW_WIDTH 104
 
-const u8 gText_Saturday[] = _("Saturday,");
-const u8 gText_Sunday[] = _("Sunday,");
-const u8 gText_Monday[] = _("Monday,");
-const u8 gText_Tuesday[] = _("Tuesday,");
-const u8 gText_Wednesday[] = _("Wednesday,");
-const u8 gText_Thursday[] = _("Thursday,");
-const u8 gText_Friday[] = _("Friday,");
+const u8 gText_Saturday[] = _("Sábado,");
+const u8 gText_Sunday[] = _("Domingo,");
+const u8 gText_Monday[] = _("Lunes,");
+const u8 gText_Tuesday[] = _("Martes,");
+const u8 gText_Wednesday[] = _("Miércoles,");
+const u8 gText_Thursday[] = _("Jueves,");
+const u8 gText_Friday[] = _("Viernes,");
 
 const u8 *const gDayNameStringsTable[7] = {
     gText_Saturday,
@@ -557,7 +557,7 @@ static void RemoveExtraStartMenuWindows(void)
     else
     {
         ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-        // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+        //CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
         RemoveWindow(sStartClockWindowId);
     }
 }
@@ -801,7 +801,7 @@ static bool32 InitStartMenuStep(void)
     case 6:
         //sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, 0, 9, 16, sNumStartMenuActions, sStartMenuCursorPos);
         MoveSelectSpriteIcon();
-        CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
+        //CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
         return TRUE;
     }
 
@@ -933,8 +933,8 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
-    RemoveExtraStartMenuWindows();
-    ShowTimeWindow();
+    //RemoveExtraStartMenuWindows();
+    //ShowTimeWindow();
     return FALSE;
 }
 
