@@ -557,7 +557,7 @@ static void RemoveExtraStartMenuWindows(void)
     else
     {
         ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-        //CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+        // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
         RemoveWindow(sStartClockWindowId);
     }
 }
@@ -801,7 +801,7 @@ static bool32 InitStartMenuStep(void)
     case 6:
         //sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, 0, 9, 16, sNumStartMenuActions, sStartMenuCursorPos);
         MoveSelectSpriteIcon();
-        //CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
+        CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
         return TRUE;
     }
 
@@ -933,8 +933,8 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
-    //RemoveExtraStartMenuWindows();
-    //ShowTimeWindow();
+    RemoveExtraStartMenuWindows();
+    ShowTimeWindow();
     return FALSE;
 }
 
