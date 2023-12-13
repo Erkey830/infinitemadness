@@ -111,7 +111,7 @@ void LoadSpecialReflectionPalette(struct Sprite *sprite)
     TintPalette_CustomTone(gReflectionPaletteBuffer, 16, Q_8_8(1.0), Q_8_8(1.0), Q_8_8(3.5));
     reflectionPalette.data = gReflectionPaletteBuffer;
     reflectionPalette.tag = GetSpritePaletteTagByPaletteNum(sprite->oam.paletteNum) + 0x1000;
-    LoadSpritePalette(&reflectionPalette);
+    LoadSpritePaletteDayNight(&reflectionPalette);
     sprite->oam.paletteNum = IndexOfSpritePaletteTag(reflectionPalette.tag);
     UpdatePaletteGammaType(sprite->oam.paletteNum, COLOR_MAP_CONTRAST);
     UpdateSpritePaletteWithWeather(sprite->oam.paletteNum);
