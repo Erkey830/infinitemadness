@@ -385,7 +385,7 @@ struct SpeciesInfo /*0x8C*/
             u32 isUltraBeast:1;
             u32 isParadoxForm:1;
             u32 isMegaEvolution:1;
-            u32 isPrimalRevesion:1;
+            u32 isPrimalReversion:1;
             u32 isUltraBurst:1;
             u32 isGigantamax:1;
             u32 isAlolanForm:1;
@@ -396,11 +396,11 @@ struct SpeciesInfo /*0x8C*/
             u32 allPerfectIVs:1;
             u32 padding4:18;
             // Move Data
- /* 0x80 */ const struct LevelUpMove *const levelUpLearnset;
- /* 0x84 */ const u16 *const teachableLearnset;
- /* 0x88 */ const struct Evolution *const evolutions;
- /* 0x84 */ const u16 *const formSpeciesIdTable;
- /* 0x84 */ const struct FormChange *const formChangeTable;
+ /* 0x80 */ const struct LevelUpMove *levelUpLearnset;
+ /* 0x84 */ const u16 *teachableLearnset;
+ /* 0x88 */ const struct Evolution *evolutions;
+ /* 0x84 */ const u16 *formSpeciesIdTable;
+ /* 0x84 */ const struct FormChange *formChangeTable;
 };
 
 struct BattleMove
@@ -549,9 +549,9 @@ void CreateBattleTowerMon_HandleLevel(struct Pokemon *mon, struct BattleTowerPok
 void CreateApprenticeMon(struct Pokemon *mon, const struct Apprentice *src, u8 monId);
 void CreateMonWithEVSpreadNatureOTID(struct Pokemon *mon, u16 species, u8 level, u8 nature, u8 fixedIV, u8 evSpread, u32 otId);
 void ConvertPokemonToBattleTowerPokemon(struct Pokemon *mon, struct BattleTowerPokemon *dest);
+u8 GetPartyMonCurvedLevel(void);
 <<<<<<< HEAD
 =======
-u8 GetPartyMonCurvedLevel(void);
 void CreateEventLegalMon(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId);
 >>>>>>> b1c6a5ff1f... Improved level curve (https://github.com/surskitty/pokeemerald/commit/192bc233a0ef7523289a0314946e9b0af23aac83)
 bool8 ShouldIgnoreDeoxysForm(u8 caseId, u8 battlerId);
@@ -601,7 +601,7 @@ void SetMonData(struct Pokemon *mon, s32 field, const void *dataArg);
 void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg);
 void CopyMon(void *dest, void *src, size_t size);
 u8 GiveMonToPlayer(struct Pokemon *mon);
-u8 SendMonToPC(struct Pokemon* mon);
+u8 CopyMonToPC(struct Pokemon *mon);
 u8 CalculatePlayerPartyCount(void);
 u8 CalculateEnemyPartyCount(void);
 u8 GetMonsStateToDoubles(void);
@@ -714,5 +714,6 @@ u8 CalculatePartyCount(struct Pokemon *party);
 u16 SanitizeSpeciesId(u16 species);
 bool32 IsSpeciesEnabled(u16 species);
 u16 GetCryIdBySpecies(u16 species);
+u16 GetSpeciesPreEvolution(u16 species);
 
 #endif // GUARD_POKEMON_H

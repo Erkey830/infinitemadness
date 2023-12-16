@@ -970,9 +970,7 @@
 #define ITEM_LINKING_CORD 796
 #define ITEM_PEAT_BLOCK 797
 #define ITEM_BERSERK_GENE 798
-#define ITEM_POKE_VIAL 799
 
-<<<<<<< HEAD
 #define ITEM_FAIRY_FEATHER 799
 #define ITEM_SYRUPY_APPLE 800
 #define ITEM_UNREMARKABLE_TEACUP 801
@@ -988,11 +986,16 @@
 #define ITEM_SWIFT_MOCHI 811
 #define ITEM_FRESH_START_MOCHI 812
 #define ITEM_GLIMMERING_CHARM 813
+<<<<<<< HEAD
+#define ITEM_POKE_VIAL 814
 
-#define ITEMS_COUNT 814
+#define ITEMS_COUNT 815
 =======
-#define ITEMS_COUNT 800
->>>>>>> 986365b2d... pokevial by caco5400
+#define ITEM_814 814 // TWV0YWwgQWxsb3k=
+#define ITEM_815 815 // U3RlbGxhciBUZXJhIFNoYXJk
+
+#define ITEMS_COUNT 816
+>>>>>>> 9ba31ac3060a0378459d2b1eadd110601a8b0730
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
