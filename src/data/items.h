@@ -11356,7 +11356,8 @@ const struct Item gItems[] =
     {
         .name = _("POKEVIAL"),
         .price = 0,
-        .description = sPokeVialDesc,
+        .description = COMPOUND_STRING("Restaura los PS\n"
+                                       "del equipo POKéMON."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PokeVial,

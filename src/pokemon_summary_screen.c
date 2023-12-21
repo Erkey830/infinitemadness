@@ -3490,32 +3490,6 @@ static void PrintContestMoves(void)
     PutWindowTilemap(PSS_LABEL_PANE_RIGHT);
 }
 
-static u8 GetBattleMoveCategory(u16 move)
-{
-    if (gBattleMoves[move].power == 0)
-    {
-        return 2;
-    }
-    else
-    {
-        switch (gBattleMoves[move].type)
-        {
-            case TYPE_NORMAL:
-            case TYPE_FIGHTING:
-            case TYPE_FLYING:
-            case TYPE_GROUND:
-            case TYPE_ROCK:
-            case TYPE_BUG:
-            case TYPE_GHOST:
-            case TYPE_POISON:
-            case TYPE_STEEL:
-                return 0;
-            default:
-                return 1;
-        }
-    }
-}
-
 static void PrintMoveDetails(u16 move)
 {
     u32 heartRow1, heartRow2;
@@ -3589,7 +3563,7 @@ static void PrintMoveDetails(u16 move)
             PrintTextOnWindow(PSS_LABEL_PANE_LEFT_MOVE, gMoveFourLineDescriptionPointers[move - 1], 2, 64, 0, 0);
 
             #if CONFIG_PHYSICAL_SPECIAL_SPLIT
-            ShowSplitIcon(GetBattleMoveSplit(move));
+            ShowSplitIcon(GetBattleMoveCategory(move));
             #elif CONFIG_SHOW_ICONS_FOR_OLD_SPLIT
             ShowSplitIcon(GetBattleMoveCategory(move));
             #endif
