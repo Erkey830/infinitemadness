@@ -1954,7 +1954,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
 
 void MoveSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)
 {
-    u16 src[2];
+    u16 UNUSED src[2];
     src[0] = baseTileNum + 1;
     src[1] = baseTileNum + 2;
 
@@ -1964,7 +1964,7 @@ void MoveSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)
 
 void MoveSelectionDestroyCursorAt(u8 cursorPosition)
 {
-    u16 src[2];
+    u16 UNUSED src[2];
     src[0] = 0x1016;
     src[1] = 0x1016;
 
@@ -1974,7 +1974,7 @@ void MoveSelectionDestroyCursorAt(u8 cursorPosition)
 
 void ActionSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)
 {
-    u16 src[2];
+    u16 UNUSED src[2];
     src[0] = 1;
     src[1] = 2;
 
@@ -1984,7 +1984,7 @@ void ActionSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)
 
 void ActionSelectionDestroyCursorAt(u8 cursorPosition)
 {
-    u16 src[2];
+    u16 UNUSED src[2];
     src[0] = 0x1016;
     src[1] = 0x1016;
 
@@ -2206,7 +2206,7 @@ static void HandleChooseActionAfterDma3(u32 battler)
 
 static void PlayerHandleChooseAction(u32 battler)
 {
-    s32 i;
+    s32 UNUSED i;
 
     gBattlerControllerFuncs[battler] = HandleChooseActionAfterDma3;
     BattleTv_ClearExplosionFaintCause();
