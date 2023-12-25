@@ -8375,7 +8375,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_FOCUS_PUNCH] =
     {
-        .name = _("TM01"),
+        .name = _("MT01"),
         .price = 3000,
         .description = COMPOUND_STRING("Powerful, but makes\n"
                                        "the user flinch if\n"
@@ -8389,7 +8389,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_DRAGON_CLAW] =
     {
-        .name = _("TM02"),
+        .name = _("MT02"),
         .price = 3000,
         .description = COMPOUND_STRING("Hooks and slashes\n"
                                        "the foe with long,\n"
@@ -8403,7 +8403,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_WATER_PULSE] =
     {
-        .name = _("TM03"),
+        .name = _("MT03"),
         .price = 3000,
         .description = COMPOUND_STRING("Generates an\n"
                                        "ultrasonic wave\n"
@@ -8417,7 +8417,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_CALM_MIND] =
     {
-        .name = _("TM04"),
+        .name = _("MT04"),
         .price = 3000,
         .description = COMPOUND_STRING("Raises Sp. Atk and\n"
                                        "Sp. Def by focusing\n"
@@ -8431,7 +8431,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_ROAR] =
     {
-        .name = _("TM05"),
+        .name = _("MT05"),
         .price = 1000,
         .description = COMPOUND_STRING("A savage roar that\n"
                                        "makes the foe flee \n"
@@ -8445,7 +8445,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_TOXIC] =
     {
-        .name = _("TM06"),
+        .name = _("MT06"),
         .price = 3000,
         .description = COMPOUND_STRING("Poisons the foe\n"
                                        "with a toxin that\n"
@@ -8459,7 +8459,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_HAIL] =
     {
-        .name = _("TM07"),
+        .name = _("MT07"),
         .price = 3000,
         .description = COMPOUND_STRING("Creates a hailstorm\n"
                                        "that damages all\n"
@@ -8473,7 +8473,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_BULK_UP] =
     {
-        .name = _("TM08"),
+        .name = _("MT08"),
         .price = 3000,
         .description = COMPOUND_STRING("Bulks up the body\n"
                                        "to boost both\n"
@@ -8487,7 +8487,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_BULLET_SEED] =
     {
-        .name = _("TM09"),
+        .name = _("MT09"),
         .price = 3000,
         .description = COMPOUND_STRING("Shoots 2 to 5 seeds\n"
                                        "in a row to strike\n"
@@ -8501,7 +8501,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_HIDDEN_POWER] =
     {
-        .name = _("TM10"),
+        .name = _("MT10"),
         .price = 3000,
         .description = COMPOUND_STRING("The attack power\n"
                                        "varies among\n"
@@ -8515,7 +8515,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SUNNY_DAY] =
     {
-        .name = _("TM11"),
+        .name = _("MT11"),
         .price = 2000,
         .description = COMPOUND_STRING("Raises the power of\n"
                                        "Fire-type moves\n"
@@ -8529,7 +8529,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_TAUNT] =
     {
-        .name = _("TM12"),
+        .name = _("MT12"),
         .price = 3000,
         .description = COMPOUND_STRING("Enrages the foe so\n"
                                        "it can only use\n"
@@ -8543,7 +8543,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_ICE_BEAM] =
     {
-        .name = _("TM13"),
+        .name = _("MT13"),
         .price = 3000,
         .description = COMPOUND_STRING("Fires an icy cold\n"
                                        "beam that may\n"
@@ -8557,7 +8557,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_BLIZZARD] =
     {
-        .name = _("TM14"),
+        .name = _("MT14"),
         .price = 5500,
         .description = COMPOUND_STRING("A brutal snow-and-\n"
                                        "wind attack that\n"
@@ -8571,7 +8571,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_HYPER_BEAM] =
     {
-        .name = _("TM15"),
+        .name = _("MT15"),
         .price = 7500,
         .description = COMPOUND_STRING("Powerful, but needs\n"
                                        "recharging the\n"
@@ -8585,7 +8585,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_LIGHT_SCREEN] =
     {
-        .name = _("TM16"),
+        .name = _("MT16"),
         .price = 3000,
         .description = COMPOUND_STRING("Creates a wall of\n"
                                        "light that lowers\n"
@@ -8599,7 +8599,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_PROTECT] =
     {
-        .name = _("TM17"),
+        .name = _("MT17"),
         .price = 3000,
         .description = COMPOUND_STRING("Negates all damage,\n"
                                        "but may fail if used\n"
@@ -8613,7 +8613,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_RAIN_DANCE] =
     {
-        .name = _("TM18"),
+        .name = _("MT18"),
         .price = 2000,
         .description = COMPOUND_STRING("Raises the power of\n"
                                        "Water-type moves\n"
@@ -8627,7 +8627,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_GIGA_DRAIN] =
     {
-        .name = _("TM19"),
+        .name = _("MT19"),
         .price = 3000,
         .description = COMPOUND_STRING("Recovers half the\n"
                                        "HP of the damage \n"
@@ -8641,7 +8641,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SAFEGUARD] =
     {
-        .name = _("TM20"),
+        .name = _("MT20"),
         .price = 3000,
         .description = COMPOUND_STRING("Prevents status\n"
                                        "abnormality with a\n"
@@ -8655,7 +8655,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_FRUSTRATION] =
     {
-        .name = _("TM21"),
+        .name = _("MT21"),
         .price = 1000,
         .description = COMPOUND_STRING("The less the user\n"
                                        "likes you, the more\n"
@@ -8669,7 +8669,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SOLAR_BEAM] =
     {
-        .name = _("TM22"),
+        .name = _("MT22"),
         .price = 3000,
         .description = COMPOUND_STRING("Absorbs sunlight in\n"
                                        "the 1st turn, then\n"
@@ -8683,7 +8683,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_IRON_TAIL] =
     {
-        .name = _("TM23"),
+        .name = _("MT23"),
         .price = 3000,
         .description = COMPOUND_STRING("Slams the foe with\n"
                                        "a hard tail. It may\n"
@@ -8697,7 +8697,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_THUNDERBOLT] =
     {
-        .name = _("TM24"),
+        .name = _("MT24"),
         .price = 3000,
         .description = COMPOUND_STRING("A powerful electric\n"
                                        "attack that may\n"
@@ -8711,7 +8711,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_THUNDER] =
     {
-        .name = _("TM25"),
+        .name = _("MT25"),
         .price = 5500,
         .description = COMPOUND_STRING("Strikes the foe\n"
                                        "with a thunderbolt.\n"
@@ -8725,7 +8725,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_EARTHQUAKE] =
     {
-        .name = _("TM26"),
+        .name = _("MT26"),
         .price = 3000,
         .description = COMPOUND_STRING("Causes a quake\n"
                                        "that has no effect\n"
@@ -8739,7 +8739,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_RETURN] =
     {
-        .name = _("TM27"),
+        .name = _("MT27"),
         .price = 1000,
         .description = COMPOUND_STRING("The more the user\n"
                                        "likes you, the more\n"
@@ -8753,7 +8753,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_DIG] =
     {
-        .name = _("TM28"),
+        .name = _("MT28"),
         .price = 2000,
         .description = COMPOUND_STRING("Digs underground\n"
                                        "the 1st turn, then\n"
@@ -8767,7 +8767,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_PSYCHIC] =
     {
-        .name = _("TM29"),
+        .name = _("MT29"),
         .price = 2000,
         .description = COMPOUND_STRING("A powerful psychic\n"
                                        "attack that may\n"
@@ -8781,7 +8781,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SHADOW_BALL] =
     {
-        .name = _("TM30"),
+        .name = _("MT30"),
         .price = 3000,
         .description = COMPOUND_STRING("Hurls a dark lump\n"
                                        "at the foe. It may\n"
@@ -8795,7 +8795,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_BRICK_BREAK] =
     {
-        .name = _("TM31"),
+        .name = _("MT31"),
         .price = 3000,
         .description = COMPOUND_STRING("Destroys barriers\n"
                                        "like Light Screen\n"
@@ -8809,7 +8809,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_DOUBLE_TEAM] =
     {
-        .name = _("TM32"),
+        .name = _("MT32"),
         .price = 2000,
         .description = COMPOUND_STRING("Creates illusory\n"
                                        "copies to enhance\n"
@@ -8823,7 +8823,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_REFLECT] =
     {
-        .name = _("TM33"),
+        .name = _("MT33"),
         .price = 3000,
         .description = COMPOUND_STRING("Creates a wall of\n"
                                        "light that weakens\n"
@@ -8837,7 +8837,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SHOCK_WAVE] =
     {
-        .name = _("TM34"),
+        .name = _("MT34"),
         .price = 3000,
         .description = COMPOUND_STRING("Zaps the foe with a\n"
                                        "jolt of electricity\n"
@@ -8851,7 +8851,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_FLAMETHROWER] =
     {
-        .name = _("TM35"),
+        .name = _("MT35"),
         .price = 3000,
         .description = COMPOUND_STRING("Looses a stream of\n"
                                        "fire that may burn\n"
@@ -8865,7 +8865,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SLUDGE_BOMB] =
     {
-        .name = _("TM36"),
+        .name = _("MT36"),
         .price = 1000,
         .description = COMPOUND_STRING("Hurls sludge at the\n"
                                        "foe. It may poison\n"
@@ -8879,7 +8879,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SANDSTORM] =
     {
-        .name = _("TM37"),
+        .name = _("MT37"),
         .price = 2000,
         .description = COMPOUND_STRING("Causes a sandstorm\n"
                                        "that hits the foe\n"
@@ -8893,7 +8893,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_FIRE_BLAST] =
     {
-        .name = _("TM38"),
+        .name = _("MT38"),
         .price = 5500,
         .description = COMPOUND_STRING("A powerful fire\n"
                                        "attack that may\n"
@@ -8907,7 +8907,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_ROCK_TOMB] =
     {
-        .name = _("TM39"),
+        .name = _("MT39"),
         .price = 3000,
         .description = COMPOUND_STRING("Stops the foe from\n"
                                        "moving with rocks.\n"
@@ -8921,7 +8921,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_AERIAL_ACE] =
     {
-        .name = _("TM40"),
+        .name = _("MT40"),
         .price = 3000,
         .description = COMPOUND_STRING("An extremely fast\n"
                                        "attack that can't\n"
@@ -8935,7 +8935,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_TORMENT] =
     {
-        .name = _("TM41"),
+        .name = _("MT41"),
         .price = 3000,
         .description = COMPOUND_STRING("Prevents the foe\n"
                                        "from using the same\n"
@@ -8949,7 +8949,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_FACADE] =
     {
-        .name = _("TM42"),
+        .name = _("MT42"),
         .price = 3000,
         .description = COMPOUND_STRING("Raises Attack when\n"
                                        "poisoned, burned,\n"
@@ -8963,7 +8963,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SECRET_POWER] =
     {
-        .name = _("TM43"),
+        .name = _("MT43"),
         .price = 3000,
         .description = COMPOUND_STRING("Adds an effect to\n"
                                        "attack depending\n"
@@ -8977,7 +8977,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_REST] =
     {
-        .name = _("TM44"),
+        .name = _("MT44"),
         .price = 3000,
         .description = COMPOUND_STRING("The user sleeps for\n"
                                        "2 turns to restore\n"
@@ -8991,7 +8991,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_ATTRACT] =
     {
-        .name = _("TM45"),
+        .name = _("MT45"),
         .price = 3000,
         .description = COMPOUND_STRING("Makes it tough to\n"
                                        "attack a foe of the\n"
@@ -9005,7 +9005,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_THIEF] =
     {
-        .name = _("TM46"),
+        .name = _("MT46"),
         .price = 3000,
         .description = COMPOUND_STRING("While attacking,\n"
                                        "it may steal the\n"
@@ -9019,7 +9019,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_STEEL_WING] =
     {
-        .name = _("TM47"),
+        .name = _("MT47"),
         .price = 3000,
         .description = COMPOUND_STRING("Spreads hard-\n"
                                        "edged wings and\n"
@@ -9033,7 +9033,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SKILL_SWAP] =
     {
-        .name = _("TM48"),
+        .name = _("MT48"),
         .price = 3000,
         .description = COMPOUND_STRING("Switches abilities\n"
                                        "with the foe on the\n"
@@ -9047,7 +9047,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_SNATCH] =
     {
-        .name = _("TM49"),
+        .name = _("MT49"),
         .price = 3000,
         .description = COMPOUND_STRING("Steals the effects\n"
                                        "of the move the foe\n"
@@ -9061,7 +9061,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_OVERHEAT] =
     {
-        .name = _("TM50"),
+        .name = _("MT50"),
         .price = 3000,
         .description = COMPOUND_STRING("Enables full-power\n"
                                        "attack, but sharply\n"
@@ -9075,7 +9075,7 @@ const struct Item gItems[] =
 
     [ITEM_TM51] =
     {
-        .name = _("TM51"),
+        .name = _("MT51"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9087,7 +9087,7 @@ const struct Item gItems[] =
 
     [ITEM_TM52] =
     {
-        .name = _("TM52"),
+        .name = _("MT52"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9099,7 +9099,7 @@ const struct Item gItems[] =
 
     [ITEM_TM53] =
     {
-        .name = _("TM53"),
+        .name = _("MT53"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9111,7 +9111,7 @@ const struct Item gItems[] =
 
     [ITEM_TM54] =
     {
-        .name = _("TM54"),
+        .name = _("MT54"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9123,7 +9123,7 @@ const struct Item gItems[] =
 
     [ITEM_TM55] =
     {
-        .name = _("TM55"),
+        .name = _("MT55"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9135,7 +9135,7 @@ const struct Item gItems[] =
 
     [ITEM_TM56] =
     {
-        .name = _("TM56"),
+        .name = _("MT56"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9147,7 +9147,7 @@ const struct Item gItems[] =
 
     [ITEM_TM57] =
     {
-        .name = _("TM57"),
+        .name = _("MT57"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9159,7 +9159,7 @@ const struct Item gItems[] =
 
     [ITEM_TM58] =
     {
-        .name = _("TM58"),
+        .name = _("MT58"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9171,7 +9171,7 @@ const struct Item gItems[] =
 
     [ITEM_TM59] =
     {
-        .name = _("TM59"),
+        .name = _("MT59"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9183,7 +9183,7 @@ const struct Item gItems[] =
 
     [ITEM_TM60] =
     {
-        .name = _("TM60"),
+        .name = _("MT60"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9195,7 +9195,7 @@ const struct Item gItems[] =
 
     [ITEM_TM61] =
     {
-        .name = _("TM61"),
+        .name = _("MT61"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9207,7 +9207,7 @@ const struct Item gItems[] =
 
     [ITEM_TM62] =
     {
-        .name = _("TM62"),
+        .name = _("MT62"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9219,7 +9219,7 @@ const struct Item gItems[] =
 
     [ITEM_TM63] =
     {
-        .name = _("TM63"),
+        .name = _("MT63"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9231,7 +9231,7 @@ const struct Item gItems[] =
 
     [ITEM_TM64] =
     {
-        .name = _("TM64"),
+        .name = _("MT64"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9243,7 +9243,7 @@ const struct Item gItems[] =
 
     [ITEM_TM65] =
     {
-        .name = _("TM65"),
+        .name = _("MT65"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9255,7 +9255,7 @@ const struct Item gItems[] =
 
     [ITEM_TM66] =
     {
-        .name = _("TM66"),
+        .name = _("MT66"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9267,7 +9267,7 @@ const struct Item gItems[] =
 
     [ITEM_TM67] =
     {
-        .name = _("TM67"),
+        .name = _("MT67"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9279,7 +9279,7 @@ const struct Item gItems[] =
 
     [ITEM_TM68] =
     {
-        .name = _("TM68"),
+        .name = _("MT68"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9291,7 +9291,7 @@ const struct Item gItems[] =
 
     [ITEM_TM69] =
     {
-        .name = _("TM69"),
+        .name = _("MT69"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9303,7 +9303,7 @@ const struct Item gItems[] =
 
     [ITEM_TM70] =
     {
-        .name = _("TM70"),
+        .name = _("MT70"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9315,7 +9315,7 @@ const struct Item gItems[] =
 
     [ITEM_TM71] =
     {
-        .name = _("TM71"),
+        .name = _("MT71"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9327,7 +9327,7 @@ const struct Item gItems[] =
 
     [ITEM_TM72] =
     {
-        .name = _("TM72"),
+        .name = _("MT72"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9339,7 +9339,7 @@ const struct Item gItems[] =
 
     [ITEM_TM73] =
     {
-        .name = _("TM73"),
+        .name = _("MT73"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9351,7 +9351,7 @@ const struct Item gItems[] =
 
     [ITEM_TM74] =
     {
-        .name = _("TM74"),
+        .name = _("MT74"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9363,7 +9363,7 @@ const struct Item gItems[] =
 
     [ITEM_TM75] =
     {
-        .name = _("TM75"),
+        .name = _("MT75"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9375,7 +9375,7 @@ const struct Item gItems[] =
 
     [ITEM_TM76] =
     {
-        .name = _("TM76"),
+        .name = _("MT76"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9387,7 +9387,7 @@ const struct Item gItems[] =
 
     [ITEM_TM77] =
     {
-        .name = _("TM77"),
+        .name = _("MT77"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9399,7 +9399,7 @@ const struct Item gItems[] =
 
     [ITEM_TM78] =
     {
-        .name = _("TM78"),
+        .name = _("MT78"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9411,7 +9411,7 @@ const struct Item gItems[] =
 
     [ITEM_TM79] =
     {
-        .name = _("TM79"),
+        .name = _("MT79"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9423,7 +9423,7 @@ const struct Item gItems[] =
 
     [ITEM_TM80] =
     {
-        .name = _("TM80"),
+        .name = _("MT80"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9435,7 +9435,7 @@ const struct Item gItems[] =
 
     [ITEM_TM81] =
     {
-        .name = _("TM81"),
+        .name = _("MT81"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9447,7 +9447,7 @@ const struct Item gItems[] =
 
     [ITEM_TM82] =
     {
-        .name = _("TM82"),
+        .name = _("MT82"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9459,7 +9459,7 @@ const struct Item gItems[] =
 
     [ITEM_TM83] =
     {
-        .name = _("TM83"),
+        .name = _("MT83"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9471,7 +9471,7 @@ const struct Item gItems[] =
 
     [ITEM_TM84] =
     {
-        .name = _("TM84"),
+        .name = _("MT84"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9483,7 +9483,7 @@ const struct Item gItems[] =
 
     [ITEM_TM85] =
     {
-        .name = _("TM85"),
+        .name = _("MT85"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9495,7 +9495,7 @@ const struct Item gItems[] =
 
     [ITEM_TM86] =
     {
-        .name = _("TM86"),
+        .name = _("MT86"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9507,7 +9507,7 @@ const struct Item gItems[] =
 
     [ITEM_TM87] =
     {
-        .name = _("TM87"),
+        .name = _("MT87"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9519,7 +9519,7 @@ const struct Item gItems[] =
 
     [ITEM_TM88] =
     {
-        .name = _("TM88"),
+        .name = _("MT88"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9531,7 +9531,7 @@ const struct Item gItems[] =
 
     [ITEM_TM89] =
     {
-        .name = _("TM89"),
+        .name = _("MT89"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9543,7 +9543,7 @@ const struct Item gItems[] =
 
     [ITEM_TM90] =
     {
-        .name = _("TM90"),
+        .name = _("MT90"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9555,7 +9555,7 @@ const struct Item gItems[] =
 
     [ITEM_TM91] =
     {
-        .name = _("TM91"),
+        .name = _("MT91"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9567,7 +9567,7 @@ const struct Item gItems[] =
 
     [ITEM_TM92] =
     {
-        .name = _("TM92"),
+        .name = _("MT92"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9579,7 +9579,7 @@ const struct Item gItems[] =
 
     [ITEM_TM93] =
     {
-        .name = _("TM93"),
+        .name = _("MT93"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9591,7 +9591,7 @@ const struct Item gItems[] =
 
     [ITEM_TM94] =
     {
-        .name = _("TM94"),
+        .name = _("MT94"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9603,7 +9603,7 @@ const struct Item gItems[] =
 
     [ITEM_TM95] =
     {
-        .name = _("TM95"),
+        .name = _("MT95"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9615,7 +9615,7 @@ const struct Item gItems[] =
 
     [ITEM_TM96] =
     {
-        .name = _("TM96"),
+        .name = _("MT96"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9627,7 +9627,7 @@ const struct Item gItems[] =
 
     [ITEM_TM97] =
     {
-        .name = _("TM97"),
+        .name = _("MT97"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9639,7 +9639,7 @@ const struct Item gItems[] =
 
     [ITEM_TM98] =
     {
-        .name = _("TM98"),
+        .name = _("MT98"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9651,7 +9651,7 @@ const struct Item gItems[] =
 
     [ITEM_TM99] =
     {
-        .name = _("TM99"),
+        .name = _("MT99"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9663,7 +9663,7 @@ const struct Item gItems[] =
 
     [ITEM_TM100] =
     {
-        .name = _("TM100"),
+        .name = _("MT100"),
         .price = 3000,
         .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
@@ -9675,7 +9675,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_CUT] =
     {
-        .name = _("HM01"),
+        .name = _("MO01"),
         .price = 0,
         .description = COMPOUND_STRING("Attacks the foe\n"
                                        "with sharp blades\n"
@@ -9689,7 +9689,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_FLY] =
     {
-        .name = _("HM02"),
+        .name = _("MO02"),
         .price = 0,
         .description = COMPOUND_STRING("Flies up on the\n"
                                        "first turn, then\n"
@@ -9703,7 +9703,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_SURF] =
     {
-        .name = _("HM03"),
+        .name = _("MO03"),
         .price = 0,
         .description = COMPOUND_STRING("Creates a huge\n"
                                        "wave, then crashes\n"
@@ -9717,7 +9717,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_STRENGTH] =
     {
-        .name = _("HM04"),
+        .name = _("MO04"),
         .price = 0,
         .description = COMPOUND_STRING("Builds enormous\n"
                                        "power, then slams\n"
@@ -9731,7 +9731,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_FLASH] =
     {
-        .name = _("HM05"),
+        .name = _("MO05"),
         .price = 0,
         .description = COMPOUND_STRING("Looses a powerful\n"
                                        "blast of light that\n"
@@ -9745,7 +9745,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_ROCK_SMASH] =
     {
-        .name = _("HM06"),
+        .name = _("MO06"),
         .price = 0,
         .description = COMPOUND_STRING("A rock-crushingly\n"
                                        "tough attack that\n"
@@ -9759,7 +9759,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_WATERFALL] =
     {
-        .name = _("HM07"),
+        .name = _("MO07"),
         .price = 0,
         .description = COMPOUND_STRING("Attacks the foe\n"
                                        "with enough power\n"
@@ -9773,7 +9773,7 @@ const struct Item gItems[] =
 
     [ITEM_HM_DIVE] =
     {
-        .name = _("HM08"),
+        .name = _("MO08"),
         .price = 0,
         .description = COMPOUND_STRING("Dives underwater\n"
                                        "the 1st turn, then\n"
@@ -9790,7 +9790,7 @@ const struct Item gItems[] =
 
     [ITEM_OVAL_CHARM] =
     {
-        .name = _("Oval Charm"),
+        .name = _("Amuleto oval"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("Raises the chance\n"
@@ -9803,7 +9803,7 @@ const struct Item gItems[] =
 
     [ITEM_SHINY_CHARM] =
     {
-        .name = _("Shiny Charm"),
+        .name = _("Amuleto iris"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("A charm that will\n"
@@ -9816,7 +9816,7 @@ const struct Item gItems[] =
 
     [ITEM_CATCHING_CHARM] =
     {
-        .name = _("CatchngCharm"),
+        .name = _("Amuleto cap."),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("A charm that raises\n"
@@ -9829,7 +9829,7 @@ const struct Item gItems[] =
 
     [ITEM_EXP_CHARM] =
     {
-        .name = _("Exp. Charm"),
+        .name = _("Amuleto Exp."),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("A charm that raises\n"
@@ -9844,7 +9844,7 @@ const struct Item gItems[] =
 
     [ITEM_ROTOM_CATALOG] =
     {
-        .name = _("RotomCatalog"),
+        .name = _("Cat. Rotom"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("A catalog full of\n"
@@ -9857,7 +9857,7 @@ const struct Item gItems[] =
 
     [ITEM_GRACIDEA] =
     {
-        .name = _("Gracidea"),
+        .name = _("Gracídea"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("Bouquets made with\n"
@@ -9870,7 +9870,7 @@ const struct Item gItems[] =
 
     [ITEM_REVEAL_GLASS] =
     {
-        .name = _("Reveal Glass"),
+        .name = _("Espejo veraz"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("This glass returns\n"
@@ -9883,7 +9883,7 @@ const struct Item gItems[] =
 
     [ITEM_DNA_SPLICERS] =
     {
-        .name = _("DNA Splicers"),
+        .name = _("Punta ADN"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("Splicer that fuses\n"
@@ -9896,7 +9896,7 @@ const struct Item gItems[] =
 
     [ITEM_ZYGARDE_CUBE] =
     {
-        .name = _("Zygarde Cube"),
+        .name = _("Arca Zygarde"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("An item to store\n"
@@ -9909,7 +9909,7 @@ const struct Item gItems[] =
 
     [ITEM_PRISON_BOTTLE] =
     {
-        .name = _("Prison Bottle"),
+        .name = _("Vas. castigo"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING("A bottle used to\n"
@@ -10129,7 +10129,7 @@ const struct Item gItems[] =
 
     [ITEM_TM_CASE] =
     {
-        .name = _("TM Case"),
+        .name = _("MT Case"),
         .price = 0,
         .description = COMPOUND_STRING("A convenient case\n"
                                        "that holds TMs and\n"
