@@ -66,7 +66,7 @@
                                 BAG_POKEBALLS_COUNT))))) + 1)
 
 // Up to 8 item slots can be visible at a time
-#define MAX_ITEMS_SHOWN 8
+#define MAX_ITEMS_SHOWN 5
 
 enum {
     SWITCH_POCKET_NONE,
@@ -398,18 +398,18 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .tilemapLeft = 14,
         .tilemapTop = 2,
         .width = 15,
-        .height = 16,
+        .height = 11,
         .paletteNum = 1,
-        .baseBlock = 0x27,
+        .baseBlock = 0x27,//39
     },
     [WIN_DESCRIPTION] = {
         .bg = 0,
-        .tilemapLeft = 0,
+        .tilemapLeft = 5,
         .tilemapTop = 13,
-        .width = 14,
+        .width = 26,
         .height = 6,
         .paletteNum = 1,
-        .baseBlock = 0x117,
+        .baseBlock = 204,//279
     },
     [WIN_POCKET_NAME] = {
         .bg = 0,
@@ -418,16 +418,16 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .width = 8,
         .height = 2,
         .paletteNum = 1,
-        .baseBlock = 0x1A1,
+        .baseBlock = 378//0x1A1,
     },
     [WIN_TMHM_INFO_ICONS] = {
         .bg = 0,
-        .tilemapLeft = 1,
+        .tilemapLeft = 0,
         .tilemapTop = 13,
         .width = 5,
         .height = 6,
         .paletteNum = 12,
-        .baseBlock = 0x16B,
+        .baseBlock = 394,//0x16B,
     },
     [WIN_TMHM_INFO] = {
         .bg = 0,
@@ -436,7 +436,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .width = 4,
         .height = 6,
         .paletteNum = 12,
-        .baseBlock = 0x189,
+        .baseBlock = 424,//0x189,
     },
     [WIN_MESSAGE] = {
         .bg = 1,
@@ -445,7 +445,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .width = 27,
         .height = 4,
         .paletteNum = 15,
-        .baseBlock = 0x1B1,
+        .baseBlock = 448//0x1B1,
     },
     DUMMY_WIN_TEMPLATE,
 };
@@ -1273,6 +1273,7 @@ static void Task_BagMenu_HandleInput(u8 taskId)
 
 static void ReturnToItemList(u8 taskId)
 {
+    gSprites[ gBagMenu->spriteIds[(gBagMenu->itemIconSlot ^ 1) + ITEMMENUSPRITE_ITEM]].invisible=FALSE;
     CreatePocketScrollArrowPair();
     CreatePocketSwitchArrowPair();
     ClearWindowTilemap(WIN_TMHM_INFO_ICONS);
@@ -1642,6 +1643,7 @@ static void OpenContextMenu(u8 taskId)
     }
     if (gBagPosition.pocket == TMHM_POCKET)
     {
+        gSprites[ gBagMenu->spriteIds[(gBagMenu->itemIconSlot ^ 1) + ITEMMENUSPRITE_ITEM]].invisible=TRUE;
         ClearWindowTilemap(WIN_DESCRIPTION);
         PrintTMHMMoveData(gSpecialVar_ItemId);
         PutWindowTilemap(WIN_TMHM_INFO_ICONS);
