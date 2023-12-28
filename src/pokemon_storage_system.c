@@ -9635,6 +9635,7 @@ s16 AdvanceStorageMonIndex(struct BoxPokemon *boxMons, u8 currIndex, u8 maxIndex
         direction = 1;
 
     i = (s8)currIndex + direction;
+    j = 0;
 
     if (mode == 1 || mode == 3)
     {
