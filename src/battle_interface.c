@@ -2918,7 +2918,7 @@ static u8 *AddTextPrinterAndCreateWindowOnHealthbox(const u8 *str, u32 x, u32 y,
         AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
     }
 
-    //AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+     //AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
 
     *windowId = winId;
     return (u8 *)(GetWindowAttribute(winId, WINDOW_TILE_DATA));
