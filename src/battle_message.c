@@ -535,12 +535,12 @@ static const u8 sText_TwoInGameTrainersDefeated[];
 static const u8 sText_Trainer2LoseText[];
 
 // New battle strings.
-    static const s8 sText_EnduredViaSturdy[] = _("¡{B_DEF_NAME_WITH_PREFIX} aguantó\nel golpe con {B_DEF_ABILITY}!");
-    static const s8 sText_PowerHerbActivation[] = _("¡{B_ATK_NAME_WITH_PREFIX} fue cargado\ngracias a {B_LAST_ITEM}!");
-    static const s8 sText_HurtByItem[] = _("¡{B_ATK_NAME_WITH_PREFIX} ha resultado\nherido por {B_LAST_ITEM}!");
-    static const s8 sText_BadlyPoisonedByItem[] = _("¡{B_EFF_NAME_WITH_PREFIX} ha sido\ngravemente envenenado por {B_LAST_ITEM}!");
-    static const s8 sText_BurnedByItem[] = _("¡{B_EFF_NAME_WITH_PREFIX} se ha\nquemado con {B_LAST_ITEM}!");
-    static const s8 sText_TargetAbilityActivates[] = _("¡{B_DEF_ABILITY} de {B_DEF_NAME_WITH_PREFIX} se activa!");
+    static const u8 sText_EnduredViaSturdy[] = _("¡{B_DEF_NAME_WITH_PREFIX} aguantó\nel golpe con {B_DEF_ABILITY}!");
+    static const u8 sText_PowerHerbActivation[] = _("¡{B_ATK_NAME_WITH_PREFIX} fue cargado\ngracias a {B_LAST_ITEM}!");
+    static const u8 sText_HurtByItem[] = _("¡{B_ATK_NAME_WITH_PREFIX} ha resultado\nherido por {B_LAST_ITEM}!");
+    static const u8 sText_BadlyPoisonedByItem[] = _("¡{B_EFF_NAME_WITH_PREFIX} ha sido\ngravemente envenenado por {B_LAST_ITEM}!");
+    static const u8 sText_BurnedByItem[] = _("¡{B_EFF_NAME_WITH_PREFIX} se ha\nquemado con {B_LAST_ITEM}!");
+    static const u8 sText_TargetAbilityActivates[] = _("¡{B_DEF_ABILITY} de {B_DEF_NAME_WITH_PREFIX} se activa!");
     static const u8 sText_GravityIntensified[] = _("¡La gravedad se ha incrementado!");
     static const u8 sText_TargetIdentified[] = _("¡{B_DEF_NAME_WITH_PREFIX} fue\nidentificado!");
     static const u8 sText_TargetWokeUp[] = _("¡{B_DEF_NAME_WITH_PREFIX} se despertó!");

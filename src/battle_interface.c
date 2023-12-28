@@ -2371,7 +2371,6 @@ static void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus)
 
 static void UpdateStatusIconInHealthbox(u8 healthboxSpriteId)
 {
-    s32 i;
     u8 battlerId, healthBarSpriteId;
     u32 status, pltAdder;
     const u8 *statusGfxPtr;
@@ -2679,7 +2678,7 @@ s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
 static void MoveBattleBarGraphically(u8 battlerId, u8 whichBar)
 {
     u8 array[8];
-    u8 filledPixelsCount, level;
+    u8 filledPixelsCount;
     u8 barElementId;
     u8 i;
 

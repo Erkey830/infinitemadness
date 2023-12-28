@@ -445,8 +445,6 @@ static void HandleInputChooseAction(u32 battler)
 
 #define TAG_ICONS_BATTLE 0x3333
 
-static EWRAM_DATA u8 iconFightEWRAM = 0;
-
 static EWRAM_DATA u8 sBattlepritesId[4]= {};
 
 

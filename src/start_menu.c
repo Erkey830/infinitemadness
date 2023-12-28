@@ -495,9 +495,6 @@ const u8 *const gDayNameStringsTable[7] = {
 static void ShowTimeWindow(void)
 {
     const u8 *suffix;
-    const u8 *timeofday;
-    u8 alignedSuffix[16];
-    u8 str[0x20];
     u8* ptr;
     u8 convertedHours;
 
@@ -1665,8 +1662,6 @@ static void ShowSaveInfoWindow(void)
     u8 color;
     u32 xOffset;
     u32 yOffset;
-    const u8 *suffix;
-    u8 *alignedSuffix = gStringVar3;
 
     if (!FlagGet(FLAG_SYS_POKEDEX_GET))
     {
