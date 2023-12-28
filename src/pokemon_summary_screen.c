@@ -2592,9 +2592,10 @@ static bool8 CanReplaceMove(void)
 {
     if (CONFIG_CAN_FORGET_HM_MOVES)
         return TRUE;
-        #ifdef BATTLE_ENGINE
+    #ifdef BATTLE_ENGINE
     else if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES || sMonSummaryScreen->newMove == MOVE_NONE)
         return TRUE;
+    #else
     else if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES
         || sMonSummaryScreen->newMove == MOVE_NONE
         || IsMoveHm(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]) != TRUE)
