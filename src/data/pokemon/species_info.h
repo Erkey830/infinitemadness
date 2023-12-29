@@ -8,10 +8,10 @@ const u8 gPichuPokedexText[] = _(
     "power as it grows older.");
 
 const u8 gPikachuPokedexText[] = _(
-    "It stores electricity in the electric sacs\n"
-    "on its cheeks. When it releases pent-up\n"
-    "energy in a burst, the electric power is\n"
-    "equal to a lightning bolt.");
+    "Tiene unas bolsas en las mejillas en las\n"
+    "en las que almacena electricidad.\n"
+    "Cuando la libera de golpe, la potencia\n"
+    "de la descarga es igual a la de un rayo.");
 
 const u8 gUnownPokedexText[] = _(
     "This Pokémon is shaped like ancient text\n"
