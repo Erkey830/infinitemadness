@@ -11195,6 +11195,7 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
+<<<<<<< HEAD
     [ITEM_POKE_VIAL] =
     {
         .name = _("Pokévial"),
@@ -11204,8 +11205,7 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
-    },
-
+=======
     [ITEM_METAL_ALLOY] =
     {
         .name = _("Metal Alloy"),
@@ -11226,5 +11226,6 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+>>>>>>> 6bc0bf9f8bb8abbdc6eba6013ddfd49d0a9b7bc4
     },
 };
