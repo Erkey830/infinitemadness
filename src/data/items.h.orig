@@ -11065,42 +11065,57 @@ const struct Item gItems[] =
     {
         .name = _("Másc. cim."),
         .price = 0,
+<<<<<<< HEAD
         .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Roca\n"
                                        "en combate."),
+=======
+        .description = COMPOUND_STRING("Allows Ogerpon to\n"
+                                       "wield the Rock-\n"
+                                       "type in battle."),
+>>>>>>> 66a638f7b494db1f084ba5f2aeaa35b5f1454448
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_ROCK,
     },
 
     [ITEM_WELLSPRING_MASK] =
     {
         .name = _("Másc. aguas"),
         .price = 0,
+<<<<<<< HEAD
         .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Agua\n"
                                        "en combate."),
+=======
+        .description = COMPOUND_STRING("Allows Ogerpon to\n"
+                                       "wield the Water-\n"
+                                       "type in battle."),
+>>>>>>> 66a638f7b494db1f084ba5f2aeaa35b5f1454448
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_WATER,
     },
 
     [ITEM_HEARTHFLAME_MASK] =
     {
         .name = _("Másc. hoguera"),
         .price = 0,
+<<<<<<< HEAD
         .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Fuego\n"
                                        "en combate."),
+=======
+        .description = COMPOUND_STRING("Allows Ogerpon to\n"
+                                       "wield the Fire-\n"
+                                       "type in battle."),
+>>>>>>> 66a638f7b494db1f084ba5f2aeaa35b5f1454448
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FIRE,
     },
 
     [ITEM_HEALTH_MOCHI] =
@@ -11195,7 +11210,6 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-<<<<<<< HEAD
     [ITEM_POKE_VIAL] =
     {
         .name = _("Pokévial"),
@@ -11205,7 +11219,8 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
-=======
+    },
+
     [ITEM_METAL_ALLOY] =
     {
         .name = _("Metal Alloy"),
@@ -11226,6 +11241,5 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
->>>>>>> 6bc0bf9f8bb8abbdc6eba6013ddfd49d0a9b7bc4
     },
 };

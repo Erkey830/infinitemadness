@@ -11065,42 +11065,36 @@ const struct Item gItems[] =
     {
         .name = _("Másc. cim."),
         .price = 0,
-        .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Roca\n"
                                        "en combate."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_ROCK,
     },
 
     [ITEM_WELLSPRING_MASK] =
     {
         .name = _("Másc. aguas"),
         .price = 0,
-        .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Agua\n"
                                        "en combate."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_WATER,
     },
 
     [ITEM_HEARTHFLAME_MASK] =
     {
         .name = _("Másc. hoguera"),
         .price = 0,
-        .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Fuego\n"
                                        "en combate."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FIRE,
     },
 
     [ITEM_HEALTH_MOCHI] =
