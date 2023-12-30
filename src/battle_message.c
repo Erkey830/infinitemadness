@@ -838,7 +838,7 @@ static const u8 sText_Trainer2LoseText[];
     static const u8 sText_TheSeaOfFireDisappeared[] = _("El mar de fuego alrededor del equipo {B_ATK_TEAM2}\ndesapareció.");
     static const u8 sText_SwampEnvelopedSide[] = _("Un pantano envolvió\nal equipo {B_DEF_TEAM2}.");
     static const u8 sText_TheSwampDisappeared[] = _("El pantano alrededor del equipo {B_ATK_TEAM2}\ndesapareció.");
-static const u8 sText_ElectroShockCharging[] = _("{B_ATK_NAME_WITH_PREFIX} absobi� la\nelectricidad!");
+static const u8 sText_ElectroShockCharging[] = _("{B_ATK_NAME_WITH_PREFIX} absobió la\nelectricidad!");
     static const u8 sText_HospitalityRestoration[] = _("¡{B_ATK_PARTNER_NAME} se bebió todo\nel té que Sinistea preparó!");
 
 static const u8 sText_Dot[] = _(".");
