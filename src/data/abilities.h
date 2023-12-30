@@ -8,700 +8,700 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_STENCH] =
     {
-        .name = _("Stench"),
-        .description = COMPOUND_STRING("May cause a foe to flinch."),
+        .name = _("Hedor"),
+        .description = COMPOUND_STRING("Aleja a Pokémon salvajes."),
     },
 
     [ABILITY_DRIZZLE] =
     {
-        .name = _("Drizzle"),
-        .description = COMPOUND_STRING("Summons rain in battle."),
+        .name = _("Llovizna"),
+        .description = COMPOUND_STRING("Hace que llueva en combate."),
     },
 
     [ABILITY_SPEED_BOOST] =
     {
-        .name = _("Speed Boost"),
-        .description = COMPOUND_STRING("Gradually boosts Speed."),
+        .name = _("Impulso"),
+        .description = COMPOUND_STRING("Va subiendo la Velocidad."),
     },
 
     [ABILITY_BATTLE_ARMOR] =
     {
-        .name = _("Battle Armor"),
-        .description = COMPOUND_STRING("Blocks critical hits."),
+        .name = _("Armadura Batalla"),
+        .description = COMPOUND_STRING("Bloquea golpes críticos."),
     },
 
     [ABILITY_STURDY] =
     {
-        .name = _("Sturdy"),
-        .description = COMPOUND_STRING("Negates 1-hit KO attacks."),
+        .name = _("Robustez"),
+        .description = COMPOUND_STRING("Anula golpes fulminantes."),
     },
 
     [ABILITY_DAMP] =
     {
-        .name = _("Damp"),
-        .description = COMPOUND_STRING("Prevents self-destruction."),
+        .name = _("Humedad"),
+        .description = COMPOUND_STRING("Evita la autodestrucción."),
     },
 
     [ABILITY_LIMBER] =
     {
-        .name = _("Limber"),
-        .description = COMPOUND_STRING("Prevents paralysis."),
+        .name = _("Flexibilidad"),
+        .description = COMPOUND_STRING("Evita la parálisis."),
     },
 
     [ABILITY_SAND_VEIL] =
     {
-        .name = _("Sand Veil"),
-        .description = COMPOUND_STRING("Ups evasion in a sandstorm."),
+        .name = _("Velo Arena"),
+        .description = COMPOUND_STRING("Más evasión en Torm. Arena."),
     },
 
     [ABILITY_STATIC] =
     {
-        .name = _("Static"),
-        .description = COMPOUND_STRING("Paralyzes on contact."),
+        .name = _("Elec. Estática"),
+        .description = COMPOUND_STRING("Paraliza al mín. contacto."),
     },
 
     [ABILITY_VOLT_ABSORB] =
     {
-        .name = _("Volt Absorb"),
-        .description = COMPOUND_STRING("Turns electricity into HP."),
+        .name = _("Absorbe Elec"),
+        .description = COMPOUND_STRING("Cambia electricidad en PS."),
     },
 
     [ABILITY_WATER_ABSORB] =
     {
-        .name = _("Water Absorb"),
-        .description = COMPOUND_STRING("Changes water into HP."),
+        .name = _("Absorbe Agua"),
+        .description = COMPOUND_STRING("Convierte el agua en PS."),
     },
 
     [ABILITY_OBLIVIOUS] =
     {
-        .name = _("Oblivious"),
-        .description = COMPOUND_STRING("Prevents attraction."),
+        .name = _("Despiste"),
+        .description = COMPOUND_STRING("Evita la atracción."),
     },
 
     [ABILITY_CLOUD_NINE] =
     {
-        .name = _("Cloud Nine"),
-        .description = COMPOUND_STRING("Negates weather effects."),
+        .name = _("Aclimatación"),
+        .description = COMPOUND_STRING("Anula los efectos del clima."),
     },
 
     [ABILITY_COMPOUND_EYES] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Compound Eyes"),
+        .name = _("Ojocompuesto"),
     #else
-        .name = _("CompoundEyes"),
+        .name = _("Ojocompuesto"),
     #endif
-        .description = COMPOUND_STRING("Raises accuracy."),
+        .description = COMPOUND_STRING("Aumenta la Precisión."),
     },
 
     [ABILITY_INSOMNIA] =
     {
-        .name = _("Insomnia"),
-        .description = COMPOUND_STRING("Prevents sleep."),
+        .name = _("Insomnio"),
+        .description = COMPOUND_STRING("Evita el quedarse dormido."),
     },
 
     [ABILITY_COLOR_CHANGE] =
     {
-        .name = _("Color Change"),
-        .description = COMPOUND_STRING("Changes type to foe's move."),
+        .name = _("Cambio Color"),
+        .description = COMPOUND_STRING("Toma el tipo del mov. rival."),
     },
 
     [ABILITY_IMMUNITY] =
     {
-        .name = _("Immunity"),
-        .description = COMPOUND_STRING("Prevents poisoning."),
+        .name = _("Inmunidad"),
+        .description = COMPOUND_STRING("Evita el envenenamiento."),
     },
 
     [ABILITY_FLASH_FIRE] =
     {
-        .name = _("Flash Fire"),
-        .description = COMPOUND_STRING("Powers up if hit by fire."),
+        .name = _("Absorbefuego"),
+        .description = COMPOUND_STRING("Se carga si recibe Fuego."),
     },
 
     [ABILITY_SHIELD_DUST] =
     {
-        .name = _("Shield Dust"),
-        .description = COMPOUND_STRING("Prevents added effects."),
+        .name = _("Polvo Escudo"),
+        .description = COMPOUND_STRING("Evita efectos secundarios."),
     },
 
     [ABILITY_OWN_TEMPO] =
     {
-        .name = _("Own Tempo"),
-        .description = COMPOUND_STRING("Prevents confusion."),
+        .name = _("Ritmo Propio"),
+        .description = COMPOUND_STRING("Evita la confusión."),
     },
 
     [ABILITY_SUCTION_CUPS] =
     {
-        .name = _("Suction Cups"),
-        .description = COMPOUND_STRING("Firmly anchors the body."),
+        .name = _("Ventosas"),
+        .description = COMPOUND_STRING("Fija el cuerpo con firmeza."),
     },
 
     [ABILITY_INTIMIDATE] =
     {
-        .name = _("Intimidate"),
-        .description = COMPOUND_STRING("Lowers the foe's Attack."),
+        .name = _("Intimidación"),
+        .description = COMPOUND_STRING("Baja el Ataque del rival."),
     },
 
     [ABILITY_SHADOW_TAG] =
     {
-        .name = _("Shadow Tag"),
-        .description = COMPOUND_STRING("Prevents the foe's escape."),
+        .name = _("Sombratrampa"),
+        .description = COMPOUND_STRING("Evita que el enemigo huya."),
     },
 
     [ABILITY_ROUGH_SKIN] =
     {
-        .name = _("Rough Skin"),
-        .description = COMPOUND_STRING("Hurts to touch."),
+        .name = _("Piel Tosca"),
+        .description = COMPOUND_STRING("Hiere al tacto."),
     },
 
     [ABILITY_WONDER_GUARD] =
     {
-        .name = _("Wonder Guard"),
-        .description = COMPOUND_STRING("“Supereffective” hits."),
+        .name = _("Superguarda"),
+        .description = COMPOUND_STRING("Cuesta mucho hacerle daño."),
     },
 
     [ABILITY_LEVITATE] =
     {
-        .name = _("Levitate"),
-        .description = COMPOUND_STRING("Not hit by Ground attacks."),
+        .name = _("Levitación"),
+        .description = COMPOUND_STRING("No sufre at. tipo Tierra."),
     },
 
     [ABILITY_EFFECT_SPORE] =
     {
-        .name = _("Effect Spore"),
-        .description = COMPOUND_STRING("Leaves spores on contact."),
+        .name = _("Efectoespora"),
+        .description = COMPOUND_STRING("Deja esporas al contacto."),
     },
 
     [ABILITY_SYNCHRONIZE] =
     {
-        .name = _("Synchronize"),
-        .description = COMPOUND_STRING("Passes on status problems."),
+        .name = _("Sincronía"),
+        .description = COMPOUND_STRING("Transmite problem. de estado"),
     },
 
     [ABILITY_CLEAR_BODY] =
     {
-        .name = _("Clear Body"),
-        .description = COMPOUND_STRING("Prevents ability reduction."),
+        .name = _("Cuerpo Puro"),
+        .description = COMPOUND_STRING("Evita que baje la habilidad."),
     },
 
     [ABILITY_NATURAL_CURE] =
     {
-        .name = _("Natural Cure"),
-        .description = COMPOUND_STRING("Heals upon switching out."),
+        .name = _("Cura Natural"),
+        .description = COMPOUND_STRING("Se cura al salir."),
     },
 
     [ABILITY_LIGHTNING_ROD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Lightning Rod"),
+        .name = _("Pararrayos"),
     #else
-        .name = _("LightningRod"),
+        .name = _("Pararrayos"),
     #endif
-        .description = COMPOUND_STRING("Draws electrical moves."),
+        .description = COMPOUND_STRING("Frena ataques eléctricos."),
     },
 
     [ABILITY_SERENE_GRACE] =
     {
-        .name = _("Serene Grace"),
-        .description = COMPOUND_STRING("Promotes added effects."),
+        .name = _("Dicha"),
+        .description = COMPOUND_STRING("Añade efectos secundarios."),
     },
 
     [ABILITY_SWIFT_SWIM] =
     {
-        .name = _("Swift Swim"),
-        .description = COMPOUND_STRING("Raises Speed in rain."),
+        .name = _("Nado Rápido"),
+        .description = COMPOUND_STRING("Con lluvia, sube Velocidad."),
     },
 
     [ABILITY_CHLOROPHYLL] =
     {
-        .name = _("Chlorophyll"),
-        .description = COMPOUND_STRING("Raises Speed in sunshine."),
+        .name = _("Clorofila"),
+        .description = COMPOUND_STRING("Con sol, sube la Velocidad."),
     },
 
     [ABILITY_ILLUMINATE] =
     {
-        .name = _("Illuminate"),
-        .description = COMPOUND_STRING("Encounter rate increases."),
+        .name = _("Iluminación"),
+        .description = COMPOUND_STRING("Facilita el encuentro."),
     },
 
     [ABILITY_TRACE] =
     {
-        .name = _("Trace"),
-        .description = COMPOUND_STRING("Copies special ability."),
+        .name = _("Rastro"),
+        .description = COMPOUND_STRING("Copia habilidad especial."),
     },
 
     [ABILITY_HUGE_POWER] =
     {
-        .name = _("Huge Power"),
-        .description = COMPOUND_STRING("Raises Attack."),
+        .name = _("Potencia"),
+        .description = COMPOUND_STRING("Aumenta el Ataque."),
     },
 
     [ABILITY_POISON_POINT] =
     {
-        .name = _("Poison Point"),
-        .description = COMPOUND_STRING("Poisons foe on contact."),
+        .name = _("Punto Tóxico"),
+        .description = COMPOUND_STRING("Envenena al mín. contacto."),
     },
 
     [ABILITY_INNER_FOCUS] =
     {
-        .name = _("Inner Focus"),
-        .description = COMPOUND_STRING("Prevents flinching."),
+        .name = _("Foco Interno"),
+        .description = COMPOUND_STRING("Evita el retroceso."),
     },
 
     [ABILITY_MAGMA_ARMOR] =
     {
-        .name = _("Magma Armor"),
-        .description = COMPOUND_STRING("Prevents freezing."),
+        .name = _("Escudo Magma"),
+        .description = COMPOUND_STRING("Evita el congelamiento."),
     },
 
     [ABILITY_WATER_VEIL] =
     {
-        .name = _("Water Veil"),
-        .description = COMPOUND_STRING("Prevents burns."),
+        .name = _("Velo Agua"),
+        .description = COMPOUND_STRING("Evita las quemaduras."),
     },
 
     [ABILITY_MAGNET_PULL] =
     {
-        .name = _("Magnet Pull"),
-        .description = COMPOUND_STRING("Traps Steel-type Pokémon."),
+        .name = _("Imán"),
+        .description = COMPOUND_STRING("Atrapa Pokémon de Acero."),
     },
 
     [ABILITY_SOUNDPROOF] =
     {
-        .name = _("Soundproof"),
-        .description = COMPOUND_STRING("Avoids sound-based moves."),
+        .name = _("Insonorizar"),
+        .description = COMPOUND_STRING("Evita ataques de sonido."),
     },
 
     [ABILITY_RAIN_DISH] =
     {
-        .name = _("Rain Dish"),
-        .description = COMPOUND_STRING("Slight HP recovery in rain."),
+        .name = _("Cura Lluvia"),
+        .description = COMPOUND_STRING("Sube PS cuando llueve."),
     },
 
     [ABILITY_SAND_STREAM] =
     {
-        .name = _("Sand Stream"),
-        .description = COMPOUND_STRING("Summons a sandstorm."),
+        .name = _("Chorro Arena"),
+        .description = COMPOUND_STRING("Crea una Tormenta de Arena."),
     },
 
     [ABILITY_PRESSURE] =
     {
-        .name = _("Pressure"),
-        .description = COMPOUND_STRING("Raises foe's PP usage."),
+        .name = _("Presión"),
+        .description = COMPOUND_STRING("Baja los PP del enemigo."),
     },
 
     [ABILITY_THICK_FAT] =
     {
-        .name = _("Thick Fat"),
-        .description = COMPOUND_STRING("Heat-and-cold protection."),
+        .name = _("Sebo"),
+        .description = COMPOUND_STRING("Protege del frío y calor."),
     },
 
     [ABILITY_EARLY_BIRD] =
     {
-        .name = _("Early Bird"),
-        .description = COMPOUND_STRING("Awakens quickly from sleep."),
+        .name = _("Madrugar"),
+        .description = COMPOUND_STRING("Despierta rápido al Pkmn."),
     },
 
     [ABILITY_FLAME_BODY] =
     {
-        .name = _("Flame Body"),
-        .description = COMPOUND_STRING("Burns the foe on contact."),
+        .name = _("Cuerpo Llama"),
+        .description = COMPOUND_STRING("Quema al mín. contacto."),
     },
 
     [ABILITY_RUN_AWAY] =
     {
-        .name = _("Run Away"),
-        .description = COMPOUND_STRING("Makes escaping easier."),
+        .name = _("Fuga"),
+        .description = COMPOUND_STRING("Facilita la huida."),
     },
 
     [ABILITY_KEEN_EYE] =
     {
-        .name = _("Keen Eye"),
-        .description = COMPOUND_STRING("Prevents loss of accuracy."),
+        .name = _("Vista Lince"),
+        .description = COMPOUND_STRING("Evita que baje precisión."),
     },
 
     [ABILITY_HYPER_CUTTER] =
     {
-        .name = _("Hyper Cutter"),
-        .description = COMPOUND_STRING("Prevents Attack reduction."),
+        .name = _("Corte Fuerte"),
+        .description = COMPOUND_STRING("Evita que baje el ataque."),
     },
 
     [ABILITY_PICKUP] =
     {
-        .name = _("Pickup"),
-        .description = COMPOUND_STRING("May pick up items."),
+        .name = _("Recogida"),
+        .description = COMPOUND_STRING("Puede tomar objetos."),
     },
 
     [ABILITY_TRUANT] =
     {
-        .name = _("Truant"),
-        .description = COMPOUND_STRING("Moves only every two turns."),
+        .name = _("Ausente"),
+        .description = COMPOUND_STRING("Interviene cada 2 rondas."),
     },
 
     [ABILITY_HUSTLE] =
     {
-        .name = _("Hustle"),
-        .description = COMPOUND_STRING("Trades accuracy for power."),
+        .name = _("Entusiasmo"),
+        .description = COMPOUND_STRING("Cambia Precis. por energía."),
     },
 
     [ABILITY_CUTE_CHARM] =
     {
-        .name = _("Cute Charm"),
-        .description = COMPOUND_STRING("Infatuates on contact."),
+        .name = _("Gran Encanto"),
+        .description = COMPOUND_STRING("Emboba al mínimo contacto."),
     },
 
     [ABILITY_PLUS] =
     {
-        .name = _("Plus"),
-        .description = COMPOUND_STRING("Powers up with Minus."),
+        .name = _("Más"),
+        .description = COMPOUND_STRING("Mejora con habilidad menos."),
     },
 
     [ABILITY_MINUS] =
     {
-        .name = _("Minus"),
-        .description = COMPOUND_STRING("Powers up with Plus."),
+        .name = _("Menos"),
+        .description = COMPOUND_STRING("Mejora con habilidad más."),
     },
 
     [ABILITY_FORECAST] =
     {
-        .name = _("Forecast"),
-        .description = COMPOUND_STRING("Changes with the weather."),
+        .name = _("Predicción"),
+        .description = COMPOUND_STRING("Cambia con el clima."),
     },
 
     [ABILITY_STICKY_HOLD] =
     {
-        .name = _("Sticky Hold"),
-        .description = COMPOUND_STRING("Prevents item theft."),
+        .name = _("Viscosidad"),
+        .description = COMPOUND_STRING("Evita el robo de objetos."),
     },
 
     [ABILITY_SHED_SKIN] =
     {
-        .name = _("Shed Skin"),
-        .description = COMPOUND_STRING("Heals the body by shedding."),
+        .name = _("Mudar"),
+        .description = COMPOUND_STRING("Se cura mudando la piel."),
     },
 
     [ABILITY_GUTS] =
     {
-        .name = _("Guts"),
-        .description = COMPOUND_STRING("Ups Attack if suffering."),
+        .name = _("Agallas"),
+        .description = COMPOUND_STRING("Sube el Ataque si sufre."),
     },
 
     [ABILITY_MARVEL_SCALE] =
     {
-        .name = _("Marvel Scale"),
-        .description = COMPOUND_STRING("Ups Defense if suffering."),
+        .name = _("Esc. Espec"),
+        .description = COMPOUND_STRING("Sube la Defensa si sufre."),
     },
 
     [ABILITY_LIQUID_OOZE] =
     {
-        .name = _("Liquid Ooze"),
-        .description = COMPOUND_STRING("Draining causes injury."),
+        .name = _("Lodo Líquido"),
+        .description = COMPOUND_STRING("Al verterlo, hiere."),
     },
 
     [ABILITY_OVERGROW] =
     {
-        .name = _("Overgrow"),
-        .description = COMPOUND_STRING("Ups Grass moves in a pinch."),
+        .name = _("Espesura"),
+        .description = COMPOUND_STRING("Sube ataques tipo Planta."),
     },
 
     [ABILITY_BLAZE] =
     {
-        .name = _("Blaze"),
-        .description = COMPOUND_STRING("Ups Fire moves in a pinch."),
+        .name = _("Mar Llamas"),
+        .description = COMPOUND_STRING("Sube ataques tipo Fuego."),
     },
 
     [ABILITY_TORRENT] =
     {
-        .name = _("Torrent"),
-        .description = COMPOUND_STRING("Ups Water moves in a pinch."),
+        .name = _("Torrente"),
+        .description = COMPOUND_STRING("Sube ataques tipo Agua."),
     },
 
     [ABILITY_SWARM] =
     {
-        .name = _("Swarm"),
-        .description = COMPOUND_STRING("Ups Bug moves in a pinch."),
+        .name = _("Enjambre"),
+        .description = COMPOUND_STRING("Sube ataques tipo Bicho."),
     },
 
     [ABILITY_ROCK_HEAD] =
     {
-        .name = _("Rock Head"),
-        .description = COMPOUND_STRING("Prevents recoil damage."),
+        .name = _("Cabeza Roca"),
+        .description = COMPOUND_STRING("Evita volver a ser golpeado."),
     },
 
     [ABILITY_DROUGHT] =
     {
-        .name = _("Drought"),
-        .description = COMPOUND_STRING("Summons sunlight in battle."),
+        .name = _("Sequía"),
+        .description = COMPOUND_STRING("Toma luz solar en batalla."),
     },
 
     [ABILITY_ARENA_TRAP] =
     {
-        .name = _("Arena Trap"),
-        .description = COMPOUND_STRING("Prevents fleeing."),
+        .name = _("Trampa Arena"),
+        .description = COMPOUND_STRING("Evita la huida."),
     },
 
     [ABILITY_VITAL_SPIRIT] =
     {
-        .name = _("Vital Spirit"),
-        .description = COMPOUND_STRING("Prevents sleep."),
+        .name = _("Espíritu Vital"),
+        .description = COMPOUND_STRING("Evita quedarse dormido."),
     },
 
     [ABILITY_WHITE_SMOKE] =
     {
-        .name = _("White Smoke"),
-        .description = COMPOUND_STRING("Prevents ability reduction."),
+        .name = _("Humo Blanco"),
+        .description = COMPOUND_STRING("Evita que baje la habilidad."),
     },
 
     [ABILITY_PURE_POWER] =
     {
-        .name = _("Pure Power"),
-        .description = COMPOUND_STRING("Raises Attack."),
+        .name = _("Energía Pura"),
+        .description = COMPOUND_STRING("Aumenta el Ataque."),
     },
 
     [ABILITY_SHELL_ARMOR] =
     {
-        .name = _("Shell Armor"),
-        .description = COMPOUND_STRING("Blocks critical hits."),
+        .name = _("Caparazón"),
+        .description = COMPOUND_STRING("Bloquea golpes críticos."),
     },
 
     [ABILITY_AIR_LOCK] =
     {
-        .name = _("Air Lock"),
-        .description = COMPOUND_STRING("Negates weather effects."),
+        .name = _("Bucle Aire"),
+        .description = COMPOUND_STRING("Anula los efectos del clima."),
     },
 
     [ABILITY_TANGLED_FEET] =
     {
-        .name = _("Tangled Feet"),
-        .description = COMPOUND_STRING("Ups evasion if confused."),
+        .name = _("Tumbos"),
+        .description = COMPOUND_STRING("Sube Evas. estando conf."),
     },
 
     [ABILITY_MOTOR_DRIVE] =
     {
-        .name = _("Motor Drive"),
-        .description = COMPOUND_STRING("Electricity raises Speed."),
+        .name = _("Electromotor"),
+        .description = COMPOUND_STRING("Sube Vel. si recibe Eléct."),
     },
 
     [ABILITY_RIVALRY] =
     {
-        .name = _("Rivalry"),
-        .description = COMPOUND_STRING("Powers up against rivals."),
+        .name = _("Rivalidad"),
+        .description = COMPOUND_STRING("Sube Ataque mismo sexo."),
     },
 
     [ABILITY_STEADFAST] =
     {
-        .name = _("Steadfast"),
-        .description = COMPOUND_STRING("Flinching raises Speed."),
+        .name = _("Impasible"),
+        .description = COMPOUND_STRING("Retroceder aumenta la Vel."),
     },
 
     [ABILITY_SNOW_CLOAK] =
     {
-        .name = _("Snow Cloak"),
-        .description = COMPOUND_STRING("Ups evasion in Hail or Snow."),
+        .name = _("Manto Níveo"),
+        .description = COMPOUND_STRING("Sube la Evas. con Granizo."),
     },
 
     [ABILITY_GLUTTONY] =
     {
-        .name = _("Gluttony"),
-        .description = COMPOUND_STRING("Eats Berries early."),
+        .name = _("Gula"),
+        .description = COMPOUND_STRING("Come bayas más pronto."),
     },
 
     [ABILITY_ANGER_POINT] =
     {
-        .name = _("Anger Point"),
-        .description = COMPOUND_STRING("Critical hits raise Attack."),
+        .name = _("Irascible"),
+        .description = COMPOUND_STRING("Golpe crítico sube Ataque."),
     },
 
     [ABILITY_UNBURDEN] =
     {
-        .name = _("Unburden"),
-        .description = COMPOUND_STRING("Using a hold item ups Speed."),
+        .name = _("Liviano"),
+        .description = COMPOUND_STRING("Sube Vel. al usar obj. eq."),
     },
 
     [ABILITY_HEATPROOF] =
     {
-        .name = _("Heatproof"),
-        .description = COMPOUND_STRING("Heat and burn protection."),
+        .name = _("Ignífugo"),
+        .description = COMPOUND_STRING("Resiste calor y quemadura."),
     },
 
     [ABILITY_SIMPLE] =
     {
         .name = _("Simple"),
-        .description = COMPOUND_STRING("Prone to wild stat changes."),
+        .description = COMPOUND_STRING("Duplica cambios en estad."),
     },
 
     [ABILITY_DRY_SKIN] =
     {
-        .name = _("Dry Skin"),
-        .description = COMPOUND_STRING("Prefers moisture to heat."),
+        .name = _("Piel Seca"),
+        .description = COMPOUND_STRING("Pierde PS si hace calor."),
     },
 
     [ABILITY_DOWNLOAD] =
     {
-        .name = _("Download"),
-        .description = COMPOUND_STRING("Adjusts power favorably."),
+        .name = _("Descarga"),
+        .description = COMPOUND_STRING("Sube At. según Def. rival."),
     },
 
     [ABILITY_IRON_FIST] =
     {
-        .name = _("Iron Fist"),
-        .description = COMPOUND_STRING("Boosts punching moves."),
+        .name = _("Puño Férreo"),
+        .description = COMPOUND_STRING("Sube poten. de puñetazos."),
     },
 
     [ABILITY_POISON_HEAL] =
     {
-        .name = _("Poison Heal"),
-        .description = COMPOUND_STRING("Restores HP if poisoned."),
+        .name = _("Antídoto"),
+        .description = COMPOUND_STRING("Recupera PS con veneno."),
     },
 
     [ABILITY_ADAPTABILITY] =
     {
-        .name = _("Adaptability"),
-        .description = COMPOUND_STRING("Boosts same type attacks."),
+        .name = _("Adaptable"),
+        .description = COMPOUND_STRING("Potencia mov. mismo tipo."),
     },
 
     [ABILITY_SKILL_LINK] =
     {
-        .name = _("Skill Link"),
-        .description = COMPOUND_STRING("Multi-hit moves hit 5 times."),
+        .name = _("Encadenado"),
+        .description = COMPOUND_STRING("Siempre pot. mult. golpe."),
     },
 
     [ABILITY_HYDRATION] =
     {
-        .name = _("Hydration"),
-        .description = COMPOUND_STRING("Cures status in rain."),
+        .name = _("Hidratación"),
+        .description = COMPOUND_STRING("Cura estado si llueve."),
     },
 
     [ABILITY_SOLAR_POWER] =
     {
-        .name = _("Solar Power"),
-        .description = COMPOUND_STRING("Powers up in sunshine."),
+        .name = _("Poder Solar"),
+        .description = COMPOUND_STRING("Sube el Ataque con sol."),
     },
 
     [ABILITY_QUICK_FEET] =
     {
-        .name = _("Quick Feet"),
-        .description = COMPOUND_STRING("Ups Speed if suffering."),
+        .name = _("Pies Rápidos"),
+        .description = COMPOUND_STRING("Sube Vel. con prob. est."),
     },
 
     [ABILITY_NORMALIZE] =
     {
-        .name = _("Normalize"),
-        .description = COMPOUND_STRING("Moves become Normal-type."),
+        .name = _("Normalidad"),
+        .description = COMPOUND_STRING("Mov. vuelven tipo Normal."),
     },
 
     [ABILITY_SNIPER] =
     {
-        .name = _("Sniper"),
-        .description = COMPOUND_STRING("Boosts critical hits."),
+        .name = _("Francotiradr"),
+        .description = COMPOUND_STRING("Potencia mov. críticos."),
     },
 
     [ABILITY_MAGIC_GUARD] =
     {
-        .name = _("Magic Guard"),
-        .description = COMPOUND_STRING("Only damaged by attacks."),
+        .name = _("Muro Mágico"),
+        .description = COMPOUND_STRING("Solo se daña por ataques."),
     },
 
     [ABILITY_NO_GUARD] =
     {
-        .name = _("No Guard"),
-        .description = COMPOUND_STRING("Ensures that all moves hit."),
+        .name = _("Indefenso"),
+        .description = COMPOUND_STRING("Todos los mov. aciertan."),
     },
 
     [ABILITY_STALL] =
     {
-        .name = _("Stall"),
-        .description = COMPOUND_STRING("Always moves last."),
+        .name = _("Rezagado"),
+        .description = COMPOUND_STRING("Ejecuta mov. tras demás."),
     },
 
     [ABILITY_TECHNICIAN] =
     {
-        .name = _("Technician"),
-        .description = COMPOUND_STRING("Boosts weaker moves."),
+        .name = _("Experto"),
+        .description = COMPOUND_STRING("Potencia mov. más débiles."),
     },
 
     [ABILITY_LEAF_GUARD] =
     {
-        .name = _("Leaf Guard"),
-        .description = COMPOUND_STRING("Blocks status in sunshine."),
+        .name = _("Defensa Hoja"),
+        .description = COMPOUND_STRING("Evita prob. est. con sol."),
     },
 
     [ABILITY_KLUTZ] =
     {
-        .name = _("Klutz"),
-        .description = COMPOUND_STRING("Can't use hold items."),
+        .name = _("Zoquete"),
+        .description = COMPOUND_STRING("No puede usar obj. equip."),
     },
 
     [ABILITY_MOLD_BREAKER] =
     {
-        .name = _("Mold Breaker"),
-        .description = COMPOUND_STRING("Moves hit through abilities."),
+        .name = _("Rompemoldes"),
+        .description = COMPOUND_STRING("Suprime habilidad rival."),
     },
 
     [ABILITY_SUPER_LUCK] =
     {
-        .name = _("Super Luck"),
-        .description = COMPOUND_STRING("Critical hits land often."),
+        .name = _("Afortunado"),
+        .description = COMPOUND_STRING("Los críticos aciertan más."),
     },
 
     [ABILITY_AFTERMATH] =
     {
-        .name = _("Aftermath"),
-        .description = COMPOUND_STRING("Fainting damages the foe."),
+        .name = _("Detonación"),
+        .description = COMPOUND_STRING("Ser vencido daña al rival."),
     },
 
     [ABILITY_ANTICIPATION] =
     {
-        .name = _("Anticipation"),
-        .description = COMPOUND_STRING("Senses dangerous moves."),
+        .name = _("Anticipación"),
+        .description = COMPOUND_STRING("Prevé mov. peligrosos."),
     },
 
     [ABILITY_FOREWARN] =
     {
-        .name = _("Forewarn"),
-        .description = COMPOUND_STRING("Determines a foe's move."),
+        .name = _("Alerta"),
+        .description = COMPOUND_STRING("Dice mov. rival fuerte."),
     },
 
     [ABILITY_UNAWARE] =
     {
-        .name = _("Unaware"),
-        .description = COMPOUND_STRING("Ignores stat changes."),
+        .name = _("Ignorante"),
+        .description = COMPOUND_STRING("Ignora cambios de estado."),
     },
 
     [ABILITY_TINTED_LENS] =
     {
-        .name = _("Tinted Lens"),
-        .description = COMPOUND_STRING("Ups “not very effective”."),
+        .name = _("Cromolente"),
+        .description = COMPOUND_STRING("Potencia mov. no eficaces."),
     },
 
     [ABILITY_FILTER] =
     {
-        .name = _("Filter"),
-        .description = COMPOUND_STRING("Weakens “supereffective”."),
+        .name = _("Filtro"),
+        .description = COMPOUND_STRING("Mitiga mov. supereficaces."),
     },
 
     [ABILITY_SLOW_START] =
     {
-        .name = _("Slow Start"),
-        .description = COMPOUND_STRING("Takes a while to get going."),
+        .name = _("Inicio Lento"),
+        .description = COMPOUND_STRING("Tarda poco en prepararse."),
     },
 
     [ABILITY_SCRAPPY] =
     {
-        .name = _("Scrappy"),
-        .description = COMPOUND_STRING("Hits Ghost-type Pokémon."),
+        .name = _("Intrépido"),
+        .description = COMPOUND_STRING("Golpea a Pkmn Fantasma."),
     },
 
     [ABILITY_STORM_DRAIN] =
     {
-        .name = _("Storm Drain"),
-        .description = COMPOUND_STRING("Draws in Water moves."),
+        .name = _("Colector"),
+        .description = COMPOUND_STRING("Atrae movimientos de Agua."),
     },
 
     [ABILITY_ICE_BODY] =
     {
-        .name = _("Ice Body"),
-        .description = COMPOUND_STRING("HP recovery in Hail or Snow."),
+        .name = _("Gélido"),
+        .description = COMPOUND_STRING("Recupera PS con Granizo."),
     },
 
     [ABILITY_SOLID_ROCK] =
@@ -712,158 +712,158 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_SNOW_WARNING] =
     {
-        .name = _("Snow Warning"),
-        .description = COMPOUND_STRING("Summons a Hailstorm."),
+        .name = _("Nevada"),
+        .description = COMPOUND_STRING("Invoca Granizo al entrar."),
     },
 
     [ABILITY_HONEY_GATHER] =
     {
-        .name = _("Honey Gather"),
-        .description = COMPOUND_STRING("May gather Honey."),
+        .name = _("Recogemiel"),
+        .description = COMPOUND_STRING("Puede encontrar miel."),
     },
 
     [ABILITY_FRISK] =
     {
-        .name = _("Frisk"),
-        .description = COMPOUND_STRING("Checks a foe's item."),
+        .name = _("Cacheo"),
+        .description = COMPOUND_STRING("Puede ver el objeto rival."),
     },
 
     [ABILITY_RECKLESS] =
     {
-        .name = _("Reckless"),
-        .description = COMPOUND_STRING("Boosts moves with recoil."),
+        .name = _("Audaz"),
+        .description = COMPOUND_STRING("Potencia mov. hirientes."),
     },
 
     [ABILITY_MULTITYPE] =
     {
-        .name = _("Multitype"),
-        .description = COMPOUND_STRING("Changes type to its Plate."),
+        .name = _("Multitipo"),
+        .description = COMPOUND_STRING("Cambio tipo según tabla."),
     },
 
     [ABILITY_FLOWER_GIFT] =
     {
-        .name = _("Flower Gift"),
-        .description = COMPOUND_STRING("Allies power up in sunshine."),
+        .name = _("Don Floral"),
+        .description = COMPOUND_STRING("Se transforma con sol."),
     },
 
     [ABILITY_BAD_DREAMS] =
     {
-        .name = _("Bad Dreams"),
-        .description = COMPOUND_STRING("Damages sleeping Pokémon."),
+        .name = _("Mal Sueño"),
+        .description = COMPOUND_STRING("Daña al rival dormido."),
     },
 
     [ABILITY_PICKPOCKET] =
     {
-        .name = _("Pickpocket"),
-        .description = COMPOUND_STRING("Steals the foe's held item."),
+        .name = _("Hurto"),
+        .description = COMPOUND_STRING("Roba el objeto al rival."),
     },
 
     [ABILITY_SHEER_FORCE] =
     {
-        .name = _("Sheer Force"),
-        .description = COMPOUND_STRING("Trades effects for power."),
+        .name = _("Potencia Bruta"),
+        .description = COMPOUND_STRING("Pot. mov. con prob. est."),
     },
 
     [ABILITY_CONTRARY] =
     {
-        .name = _("Contrary"),
-        .description = COMPOUND_STRING("Inverts stat changes."),
+        .name = _("Respondón"),
+        .description = COMPOUND_STRING("Invierte cambios en estad."),
     },
 
     [ABILITY_UNNERVE] =
     {
-        .name = _("Unnerve"),
-        .description = COMPOUND_STRING("Foes can't eat Berries."),
+        .name = _("Nerviosismo"),
+        .description = COMPOUND_STRING("Rival no puede comer baya."),
     },
 
     [ABILITY_DEFIANT] =
     {
-        .name = _("Defiant"),
-        .description = COMPOUND_STRING("Lowered stats up Attack."),
+        .name = _("Competitivo"),
+        .description = COMPOUND_STRING("Bajadas de est. suben At."),
     },
 
     [ABILITY_DEFEATIST] =
     {
-        .name = _("Defeatist"),
-        .description = COMPOUND_STRING("Gives up at half HP."),
+        .name = _("Flaqueza"),
+        .description = COMPOUND_STRING("Se rinde con mitad de PS."),
     },
 
     [ABILITY_CURSED_BODY] =
     {
-        .name = _("Cursed Body"),
-        .description = COMPOUND_STRING("Disables moves on contact."),
+        .name = _("Cuerpo Maldito"),
+        .description = COMPOUND_STRING("Desactiva mov. al contacto."),
     },
 
     [ABILITY_HEALER] =
     {
-        .name = _("Healer"),
-        .description = COMPOUND_STRING("Heals partner Pokémon."),
+        .name = _("Alma Cura"),
+        .description = COMPOUND_STRING("Cura estado del aliado."),
     },
 
     [ABILITY_FRIEND_GUARD] =
     {
-        .name = _("Friend Guard"),
-        .description = COMPOUND_STRING("Lowers damage to partner."),
+        .name = _("Compiescolta"),
+        .description = COMPOUND_STRING("Reduce el daño a aliados."),
     },
 
     [ABILITY_WEAK_ARMOR] =
     {
-        .name = _("Weak Armor"),
-        .description = COMPOUND_STRING("Its stats change when hit."),
+        .name = _("Armadura Frágil"),
+        .description = COMPOUND_STRING("Carac. cambian al golpear."),
     },
 
     [ABILITY_HEAVY_METAL] =
     {
-        .name = _("Heavy Metal"),
-        .description = COMPOUND_STRING("Doubles weight."),
+        .name = _("Metal Pesado"),
+        .description = COMPOUND_STRING("Duplica su peso."),
     },
 
     [ABILITY_LIGHT_METAL] =
     {
-        .name = _("Light Metal"),
-        .description = COMPOUND_STRING("Halves weight."),
+        .name = _("Metal Liviano"),
+        .description = COMPOUND_STRING("Reduce a la mitad su peso."),
     },
 
     [ABILITY_MULTISCALE] =
     {
-        .name = _("Multiscale"),
-        .description = COMPOUND_STRING("Halves damage at full HP."),
+        .name = _("Multiescamas"),
+        .description = COMPOUND_STRING("Reduce daño PS completo."),
     },
 
     [ABILITY_TOXIC_BOOST] =
     {
-        .name = _("Toxic Boost"),
-        .description = COMPOUND_STRING("Ups Attack if poisoned."),
+        .name = _("Ímpetu Tóxico"),
+        .description = COMPOUND_STRING("Sube At. si es envenenado."),
     },
 
     [ABILITY_FLARE_BOOST] =
     {
-        .name = _("Flare Boost"),
-        .description = COMPOUND_STRING("Ups Sp. Atk if burned."),
+        .name = _("Ímpetu Ardiente"),
+        .description = COMPOUND_STRING("Sube At. si está quemado."),
     },
 
     [ABILITY_HARVEST] =
     {
-        .name = _("Harvest"),
-        .description = COMPOUND_STRING("May recycle a used Berry."),
+        .name = _("Cosecha"),
+        .description = COMPOUND_STRING("Puede reutilizar bayas."),
     },
 
     [ABILITY_TELEPATHY] =
     {
-        .name = _("Telepathy"),
-        .description = COMPOUND_STRING("Can't be damaged by an ally."),
+        .name = _("Telepatía"),
+        .description = COMPOUND_STRING("Elude los ataques aliados."),
     },
 
     [ABILITY_MOODY] =
     {
-        .name = _("Moody"),
-        .description = COMPOUND_STRING("Stats change gradually."),
+        .name = _("Veleta"),
+        .description = COMPOUND_STRING("Carac. suben gradualmente."),
     },
 
     [ABILITY_OVERCOAT] =
     {
-        .name = _("Overcoat"),
-        .description = COMPOUND_STRING("Blocks weather and powder."),
+        .name = _("Funda"),
+        .description = COMPOUND_STRING("Bloquea clima y polvo."),
     },
 
     [ABILITY_POISON_TOUCH] =
@@ -880,92 +880,92 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_BIG_PECKS] =
     {
-        .name = _("Big Pecks"),
-        .description = COMPOUND_STRING("Prevents Defense loss."),
+        .name = _("Sacapecho"),
+        .description = COMPOUND_STRING("Impide bajadas de defensa."),
     },
 
     [ABILITY_SAND_RUSH] =
     {
-        .name = _("Sand Rush"),
-        .description = COMPOUND_STRING("Ups Speed in a sandstorm."),
+        .name = _("Ímpetu Arena"),
+        .description = COMPOUND_STRING("Sube vel. con Tor. Arena."),
     },
 
     [ABILITY_WONDER_SKIN] =
     {
-        .name = _("Wonder Skin"),
-        .description = COMPOUND_STRING("May avoid status problems."),
+        .name = _("Piel Milagro"),
+        .description = COMPOUND_STRING("Puede evitar prob. estado."),
     },
 
     [ABILITY_ANALYTIC] =
     {
-        .name = _("Analytic"),
-        .description = COMPOUND_STRING("Moving last boosts power."),
+        .name = _("Cálculofinal"),
+        .description = COMPOUND_STRING("Ser último sube potencia."),
     },
 
     [ABILITY_ILLUSION] =
     {
-        .name = _("Illusion"),
-        .description = COMPOUND_STRING("Appears as a partner."),
+        .name = _("Ilusión"),
+        .description = COMPOUND_STRING("Adopta aspecto compañero."),
     },
 
     [ABILITY_IMPOSTER] =
     {
-        .name = _("Imposter"),
-        .description = COMPOUND_STRING("Transforms into the foe."),
+        .name = _("Impostor"),
+        .description = COMPOUND_STRING("Se transforma en el rival."),
     },
 
     [ABILITY_INFILTRATOR] =
     {
-        .name = _("Infiltrator"),
-        .description = COMPOUND_STRING("Passes through barriers."),
+        .name = _("Allanamiento"),
+        .description = COMPOUND_STRING("Atraviesa barrera rival."),
     },
 
     [ABILITY_MUMMY] =
     {
-        .name = _("Mummy"),
-        .description = COMPOUND_STRING("Spreads with contact."),
+        .name = _("Momia"),
+        .description = COMPOUND_STRING("Se propaga con contacto."),
     },
 
     [ABILITY_MOXIE] =
     {
-        .name = _("Moxie"),
-        .description = COMPOUND_STRING("KOs raise Attack."),
+        .name = _("Autoestima"),
+        .description = COMPOUND_STRING("Debilitar sube el Ataque."),
     },
 
     [ABILITY_JUSTIFIED] =
     {
-        .name = _("Justified"),
-        .description = COMPOUND_STRING("Dark hits raise Attack."),
+        .name = _("Justiciero"),
+        .description = COMPOUND_STRING("Mov. Siniestros suben At."),
     },
 
     [ABILITY_RATTLED] =
     {
-        .name = _("Rattled"),
-        .description = COMPOUND_STRING("Raises Speed when scared."),
+        .name = _("Cobardía"),
+        .description = COMPOUND_STRING("Sube Velocidad con susto."),
     },
 
     [ABILITY_MAGIC_BOUNCE] =
     {
-        .name = _("Magic Bounce"),
-        .description = COMPOUND_STRING("Reflects status moves."),
+        .name = _("Espejomágico"),
+        .description = COMPOUND_STRING("Refleja mov. de estado."),
     },
 
     [ABILITY_SAP_SIPPER] =
     {
-        .name = _("Sap Sipper"),
-        .description = COMPOUND_STRING("Grass increases Attack."),
+        .name = _("Herbívoro"),
+        .description = COMPOUND_STRING("Mov. Planta suben Ataque."),
     },
 
     [ABILITY_PRANKSTER] =
     {
-        .name = _("Prankster"),
-        .description = COMPOUND_STRING("Status moves go first."),
+        .name = _("Bromista"),
+        .description = COMPOUND_STRING("Mov. estado prioridad."),
     },
 
     [ABILITY_SAND_FORCE] =
     {
-        .name = _("Sand Force"),
-        .description = COMPOUND_STRING("Powers up in a sandstorm."),
+        .name = _("Poder Arena"),
+        .description = COMPOUND_STRING("Sube ataque en Tor. Arena."),
     },
 
     [ABILITY_IRON_BARBS] =
@@ -976,14 +976,14 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_ZEN_MODE] =
     {
-        .name = _("Zen Mode"),
-        .description = COMPOUND_STRING("Transforms at half HP."),
+        .name = _("Modo Daruma"),
+        .description = COMPOUND_STRING("Transforma a mitad de PS."),
     },
 
     [ABILITY_VICTORY_STAR] =
     {
-        .name = _("Victory Star"),
-        .description = COMPOUND_STRING("Raises party accuracy."),
+        .name = _("Tinovictoria"),
+        .description = COMPOUND_STRING("Sube precisión del bando."),
     },
 
     [ABILITY_TURBOBLAZE] =
@@ -1000,32 +1000,32 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_AROMA_VEIL] =
     {
-        .name = _("Aroma Veil"),
-        .description = COMPOUND_STRING("Prevents limiting of moves."),
+        .name = _("Velo Aroma"),
+        .description = COMPOUND_STRING("Previene límite de mov."),
     },
 
     [ABILITY_FLOWER_VEIL] =
     {
-        .name = _("Flower Veil"),
-        .description = COMPOUND_STRING("Protects Grass-types."),
+        .name = _("Velo Flor"),
+        .description = COMPOUND_STRING("Protege al tipo Planta."),
     },
 
     [ABILITY_CHEEK_POUCH] =
     {
-        .name = _("Cheek Pouch"),
-        .description = COMPOUND_STRING("Eating Berries restores HP."),
+        .name = _("Carrillo"),
+        .description = COMPOUND_STRING("Restaura PS si come bayas."),
     },
 
     [ABILITY_PROTEAN] =
     {
-        .name = _("Protean"),
-        .description = COMPOUND_STRING("Changes type to used move."),
+        .name = _("Mutatipo"),
+        .description = COMPOUND_STRING("Cambia tipo al mov. usado."),
     },
 
     [ABILITY_FUR_COAT] =
     {
-        .name = _("Fur Coat"),
-        .description = COMPOUND_STRING("Raises Defense."),
+        .name = _("Pelaje Recio"),
+        .description = COMPOUND_STRING("Reduce el daño físico."),
     },
 
     [ABILITY_MAGICIAN] =
@@ -1036,160 +1036,160 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_BULLETPROOF] =
     {
-        .name = _("Bulletproof"),
-        .description = COMPOUND_STRING("Avoids some projectiles."),
+        .name = _("Antibalas"),
+        .description = COMPOUND_STRING("Evita algunos proyectiles."),
     },
 
     [ABILITY_COMPETITIVE] =
     {
-        .name = _("Competitive"),
-        .description = COMPOUND_STRING("Lowered stats up Sp. Atk."),
+        .name = _("Tenacidad"),
+        .description = COMPOUND_STRING("Sube At. Esp. si baja est."),
     },
 
     [ABILITY_STRONG_JAW] =
     {
-        .name = _("Strong Jaw"),
-        .description = COMPOUND_STRING("Boosts biting moves."),
+        .name = _("Mandíbula Fuerte"),
+        .description = COMPOUND_STRING("Potencia mov. mordiscos."),
     },
 
     [ABILITY_REFRIGERATE] =
     {
-        .name = _("Refrigerate"),
-        .description = COMPOUND_STRING("Normal moves become Ice."),
+        .name = _("Piel Helada"),
+        .description = COMPOUND_STRING("Mov. Normales de Hielo."),
     },
 
     [ABILITY_SWEET_VEIL] =
     {
-        .name = _("Sweet Veil"),
-        .description = COMPOUND_STRING("Prevents party from sleep."),
+        .name = _("Velo Dulce"),
+        .description = COMPOUND_STRING("Previene sueño al bando."),
     },
 
     [ABILITY_STANCE_CHANGE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Stance Change"),
+        .name = _("Cambio Táctico"),
     #else
-        .name = _("StanceChange"),
+        .name = _("Cambio Táctico"),
     #endif
-        .description = COMPOUND_STRING("Transforms as it battles."),
+        .description = COMPOUND_STRING("Transforma según combate."),
     },
 
     [ABILITY_GALE_WINGS] =
     {
-        .name = _("Gale Wings"),
-        .description = COMPOUND_STRING("Flying moves go first."),
+        .name = _("Alas Vendaval"),
+        .description = COMPOUND_STRING("Mov. Volador prioritarios."),
     },
 
     [ABILITY_MEGA_LAUNCHER] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Mega Launcher"),
+        .name = _("Megadisparador"),
     #else
-        .name = _("MegaLauncher"),
+        .name = _("Megadisparador"),
     #endif
-        .description = COMPOUND_STRING("Boosts pulse moves."),
+        .description = COMPOUND_STRING("Potencia mov. de pulsos."),
     },
 
     [ABILITY_GRASS_PELT] =
     {
-        .name = _("Grass Pelt"),
-        .description = COMPOUND_STRING("Ups Defense in grass."),
+        .name = _("Manto Frondoso"),
+        .description = COMPOUND_STRING("Sube defensa en hierba."),
     },
 
     [ABILITY_SYMBIOSIS] =
     {
-        .name = _("Symbiosis"),
-        .description = COMPOUND_STRING("Passes its item to an ally."),
+        .name = _("Simbiosis"),
+        .description = COMPOUND_STRING("Pasa objeto a aliado."),
     },
 
     [ABILITY_TOUGH_CLAWS] =
     {
-        .name = _("Tough Claws"),
-        .description = COMPOUND_STRING("Boosts contact moves."),
+        .name = _("Garra Dura"),
+        .description = COMPOUND_STRING("Potencia mov. de contacto."),
     },
 
     [ABILITY_PIXILATE] =
     {
-        .name = _("Pixilate"),
-        .description = COMPOUND_STRING("Normal moves become Fairy."),
+        .name = _("Piel Feérica"),
+        .description = COMPOUND_STRING("Mov. Normales son de Hada."),
     },
 
     [ABILITY_GOOEY] =
     {
-        .name = _("Gooey"),
-        .description = COMPOUND_STRING("Lowers Speed on contact."),
+        .name = _("Baba"),
+        .description = COMPOUND_STRING("Baja Veloc. al contacto."),
     },
 
     [ABILITY_AERILATE] =
     {
-        .name = _("Aerilate"),
-        .description = COMPOUND_STRING("Normal moves become Flying."),
+        .name = _("Piel Celeste"),
+        .description = COMPOUND_STRING("Mov. Normales son Volador."),
     },
 
     [ABILITY_PARENTAL_BOND] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Parental Bond"),
+        .name = _("Amor Filial"),
     #else
-        .name = _("ParentalBond"),
+        .name = _("Amor Filial"),
     #endif
-        .description = COMPOUND_STRING("Moves hit twice."),
+        .description = COMPOUND_STRING("Mov. golpean dos veces."),
     },
 
     [ABILITY_DARK_AURA] =
     {
-        .name = _("Dark Aura"),
-        .description = COMPOUND_STRING("Boosts Dark moves."),
+        .name = _("Aura Oscura"),
+        .description = COMPOUND_STRING("Potencia mov. Siniestro."),
     },
 
     [ABILITY_FAIRY_AURA] =
     {
-        .name = _("Fairy Aura"),
-        .description = COMPOUND_STRING("Boosts Fairy moves."),
+        .name = _("Aura Feérica"),
+        .description = COMPOUND_STRING("Potencia mov. Hada."),
     },
 
     [ABILITY_AURA_BREAK] =
     {
-        .name = _("Aura Break"),
-        .description = COMPOUND_STRING("Reverse aura abilities."),
+        .name = _("Rompeaura"),
+        .description = COMPOUND_STRING("Invierte hab. de aura."),
     },
 
     [ABILITY_PRIMORDIAL_SEA] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Primordial Sea"),
+        .name = _("Mar Albor"),
     #else
         .name = _("PrimrdialSea"),
     #endif
-        .description = COMPOUND_STRING("Summons heavy rain."),
+        .description = COMPOUND_STRING("Invoca un diluvio."),
     },
 
     [ABILITY_DESOLATE_LAND] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Desolate Land"),
+        .name = _("Tierra Ocaso"),
     #else
-        .name = _("DesolateLand"),
+        .name = _("Tierra Ocaso"),
     #endif
-        .description = COMPOUND_STRING("Summons intense sunlight."),
+        .description = COMPOUND_STRING("Invoca rayos abrasadores."),
     },
 
     [ABILITY_DELTA_STREAM] =
     {
-        .name = _("Delta Stream"),
-        .description = COMPOUND_STRING("Summons strong winds."),
+        .name = _("Ráfaga Delta"),
+        .description = COMPOUND_STRING("Invoca turbulencias."),
     },
 
     [ABILITY_STAMINA] =
     {
-        .name = _("Stamina"),
-        .description = COMPOUND_STRING("Boosts Defense when hit."),
+        .name = _("Firmeza"),
+        .description = COMPOUND_STRING("Potencia Def. con golpe."),
     },
 
     [ABILITY_WIMP_OUT] =
     {
-        .name = _("Wimp Out"),
-        .description = COMPOUND_STRING("Flees at half HP."),
+        .name = _("Huida"),
+        .description = COMPOUND_STRING("Huye con mitad de PS."),
     },
 
     [ABILITY_EMERGENCY_EXIT] =
@@ -1205,157 +1205,157 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     [ABILITY_WATER_COMPACTION] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Water Compaction"),
+        .name = _("Hidrorefuerzo"),
     #else
         .name = _("WtrCmpaction"),
     #endif
-        .description = COMPOUND_STRING("Water boosts Defense."),
+        .description = COMPOUND_STRING("Agua potencia Defensa."),
     },
 
     [ABILITY_MERCILESS] =
     {
-        .name = _("Merciless"),
-        .description = COMPOUND_STRING("Criticals poisoned foes."),
+        .name = _("Ensañamiento"),
+        .description = COMPOUND_STRING("Golpe crít. a envenenado."),
     },
 
     [ABILITY_SHIELDS_DOWN] =
     {
-        .name = _("Shields Down"),
-        .description = COMPOUND_STRING("Shell breaks at half HP."),
+        .name = _("Escudo Limitado"),
+        .description = COMPOUND_STRING("Se rompe con mitad de PS."),
     },
 
     [ABILITY_STAKEOUT] =
     {
-        .name = _("Stakeout"),
-        .description = COMPOUND_STRING("Stronger as foes switch in."),
+        .name = _("Vigilante"),
+        .description = COMPOUND_STRING("Fuerte si rivales cambian."),
     },
 
     [ABILITY_WATER_BUBBLE] =
     {
-        .name = _("Water Bubble"),
-        .description = COMPOUND_STRING("Guards from fire and burns."),
+        .name = _("Pompa"),
+        .description = COMPOUND_STRING("Protege del Fuego y quem."),
     },
 
     [ABILITY_STEELWORKER] =
     {
-        .name = _("Steelworker"),
-        .description = COMPOUND_STRING("Powers up Steel moves."),
+        .name = _("Acero Templado"),
+        .description = COMPOUND_STRING("Potencia mov. Acero."),
     },
 
     [ABILITY_BERSERK] =
     {
-        .name = _("Berserk"),
-        .description = COMPOUND_STRING("Boosts Sp. Atk at low HP."),
+        .name = _("Cólera"),
+        .description = COMPOUND_STRING("Sube At. Esp. si pocos PS."),
     },
 
     [ABILITY_SLUSH_RUSH] =
     {
-        .name = _("Slush Rush"),
-        .description = COMPOUND_STRING("Raises Speed in Hail or Snow."),
+        .name = _("Quitanieves"),
+        .description = COMPOUND_STRING("Sube velocidad en Granizo."),
     },
 
     [ABILITY_LONG_REACH] =
     {
-        .name = _("Long Reach"),
-        .description = COMPOUND_STRING("Never makes contact."),
+        .name = _("Remoto"),
+        .description = COMPOUND_STRING("Nunca hace contacto."),
     },
 
     [ABILITY_LIQUID_VOICE] =
     {
-        .name = _("Liquid Voice"),
-        .description = COMPOUND_STRING("Makes sound moves Water."),
+        .name = _("Voz Fluida"),
+        .description = COMPOUND_STRING("Mov. sonido son de Agua."),
     },
 
     [ABILITY_TRIAGE] =
     {
-        .name = _("Triage"),
-        .description = COMPOUND_STRING("Healing moves go first."),
+        .name = _("Primer Auxilio"),
+        .description = COMPOUND_STRING("Mov. curación prioridad."),
     },
 
     [ABILITY_GALVANIZE] =
     {
-        .name = _("Galvanize"),
-        .description = COMPOUND_STRING("Normal moves turn Electric."),
+        .name = _("Piel Eléctrica"),
+        .description = COMPOUND_STRING("Mov. Normal son Eléctric."),
     },
 
     [ABILITY_SURGE_SURFER] =
     {
-        .name = _("Surge Surfer"),
-        .description = COMPOUND_STRING("Faster on electricity."),
+        .name = _("Cola Surf"),
+        .description = COMPOUND_STRING("Rápido en electricidad."),
     },
 
     [ABILITY_SCHOOLING] =
     {
-        .name = _("Schooling"),
-        .description = COMPOUND_STRING("Forms a school when strong."),
+        .name = _("Banco"),
+        .description = COMPOUND_STRING("Forma banco con muchos PS."),
     },
 
     [ABILITY_DISGUISE] =
     {
-        .name = _("Disguise"),
-        .description = COMPOUND_STRING("Decoy protects it once."),
+        .name = _("Disfraz"),
+        .description = COMPOUND_STRING("Protege de un golpe."),
     },
 
     [ABILITY_BATTLE_BOND] =
     {
-        .name = _("Battle Bond"),
-        .description = COMPOUND_STRING("Changes form after a KO."),
+        .name = _("Fuerteafecto"),
+        .description = COMPOUND_STRING("Cambia forma después KO."),
     },
 
     [ABILITY_POWER_CONSTRUCT] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Power Construct"),
+        .name = _("Agrupamiento"),
     #else
         .name = _("PwrConstruct"),
     #endif
-        .description = COMPOUND_STRING("Cells aid it when weakened."),
+        .description = COMPOUND_STRING("Cél. ayudan si está débil."),
     },
 
     [ABILITY_CORROSION] =
     {
-        .name = _("Corrosion"),
-        .description = COMPOUND_STRING("Poisons any type."),
+        .name = _("Corrosión"),
+        .description = COMPOUND_STRING("Envenena todos los tipos."),
     },
 
     [ABILITY_COMATOSE] =
     {
-        .name = _("Comatose"),
-        .description = COMPOUND_STRING("Always drowsing."),
+        .name = _("Letargo Perenne"),
+        .description = COMPOUND_STRING("Actúa como dormido."),
     },
 
     [ABILITY_QUEENLY_MAJESTY] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Queenly Majesty"),
+        .name = _("Regia Presencia"),
     #else
         .name = _("QueenlyMjsty"),
     #endif
-        .description = COMPOUND_STRING("Protects from priority."),
+        .description = COMPOUND_STRING("Protege de prioridad."),
     },
 
     [ABILITY_INNARDS_OUT] =
     {
-        .name = _("Innards Out"),
-        .description = COMPOUND_STRING("Hurts foe when defeated."),
+        .name = _("Revés"),
+        .description = COMPOUND_STRING("Hiere al agresor al KO."),
     },
 
     [ABILITY_DANCER] =
     {
-        .name = _("Dancer"),
-        .description = COMPOUND_STRING("Dances along with others."),
+        .name = _("Pareja Baile"),
+        .description = COMPOUND_STRING("Copia mov. de danza."),
     },
 
     [ABILITY_BATTERY] =
     {
-        .name = _("Battery"),
-        .description = COMPOUND_STRING("Boosts ally's Sp. Atk."),
+        .name = _("Batería"),
+        .description = COMPOUND_STRING("Sube at. esp. del aliado."),
     },
 
     [ABILITY_FLUFFY] =
     {
-        .name = _("Fluffy"),
-        .description = COMPOUND_STRING("Tougher but flammable."),
+        .name = _("Peluche"),
+        .description = COMPOUND_STRING("Suave pero inflamable."),
     },
 
     [ABILITY_DAZZLING] =
@@ -1373,17 +1373,17 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     [ABILITY_TANGLING_HAIR] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Tangling Hair"),
+        .name = _("Rizo Rebelde"),
     #else
-        .name = _("TanglingHair"),
+        .name = _("Rizo Rebelde"),
     #endif
-        .description = COMPOUND_STRING("Lowers Speed on contact."),
+        .description = COMPOUND_STRING("Baja Veloc. al contacto."),
     },
 
     [ABILITY_RECEIVER] =
     {
-        .name = _("Receiver"),
-        .description = COMPOUND_STRING("Copies ally's ability."),
+        .name = _("Receptor"),
+        .description = COMPOUND_STRING("Copia habilidad de aliado."),
     },
 
     [ABILITY_POWER_OF_ALCHEMY] =
@@ -1398,46 +1398,46 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_BEAST_BOOST] =
     {
-        .name = _("Beast Boost"),
-        .description = COMPOUND_STRING("KOs boost best stat."),
+        .name = _("Ultraimpulso"),
+        .description = COMPOUND_STRING("KO mejora est. más alta."),
     },
 
     [ABILITY_RKS_SYSTEM] =
     {
-        .name = _("RKS System"),
-        .description = COMPOUND_STRING("Memories change its type."),
+        .name = _("Sistema Alfa"),
+        .description = COMPOUND_STRING("Disco cambia su tipo."),
     },
 
     [ABILITY_ELECTRIC_SURGE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Electric Surge"),
+        .name = _("Electrogénes"),
     #else
         .name = _("ElectrcSurge"),
     #endif
-        .description = COMPOUND_STRING("Field becomes Electric."),
+        .description = COMPOUND_STRING("Pone Campo Eléctrico."),
     },
 
     [ABILITY_PSYCHIC_SURGE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Psychic Surge"),
+        .name = _("Psicogénesis"),
     #else
-        .name = _("PsychicSurge"),
+        .name = _("Psicogénesis"),
     #endif
-        .description = COMPOUND_STRING("Field becomes weird."),
+        .description = COMPOUND_STRING("Pone Campo Psíquico."),
     },
 
     [ABILITY_MISTY_SURGE] =
     {
-        .name = _("Misty Surge"),
-        .description = COMPOUND_STRING("Field becomes misty."),
+        .name = _("Nebulogénes"),
+        .description = COMPOUND_STRING("Pone Campo de Niebla."),
     },
 
     [ABILITY_GRASSY_SURGE] =
     {
-        .name = _("Grassy Surge"),
-        .description = COMPOUND_STRING("Field becomes grassy."),
+        .name = _("Herbogénesis"),
+        .description = COMPOUND_STRING("Pone Campo de Hierba."),
     },
 
     [ABILITY_FULL_METAL_BODY] =
@@ -1447,7 +1447,7 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     #else
         .name = _("FullMetalBdy"),
     #endif
-        .description = COMPOUND_STRING("Prevents stat reduction."),
+        .description = COMPOUND_STRING("Previene reducción de est."),
     },
 
     [ABILITY_SHADOW_SHIELD] =
@@ -1468,222 +1468,222 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_NEUROFORCE] =
     {
-        .name = _("Neuroforce"),
-        .description = COMPOUND_STRING("Ups “supereffective”."),
+        .name = _("Fuerza Cerebral"),
+        .description = COMPOUND_STRING("Potencia supereficaces."),
     },
 
     [ABILITY_INTREPID_SWORD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Intrepid Sword"),
+        .name = _("Espada Indómita"),
     #else
         .name = _("IntrepidSwrd"),
     #endif
-        .description = COMPOUND_STRING("Ups Attack on entry."),
+        .description = COMPOUND_STRING("Sube Ataque al entrar."),
     },
 
     [ABILITY_DAUNTLESS_SHIELD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Dauntless Shield"),
+        .name = _("Escudo Recio"),
     #else
         .name = _("DauntlssShld"),
     #endif
-        .description = COMPOUND_STRING("Ups Defense on entry."),
+        .description = COMPOUND_STRING("Sube Defensa al entrar."),
     },
 
     [ABILITY_LIBERO] =
     {
-        .name = _("Libero"),
-        .description = COMPOUND_STRING("Changes type to move's."),
+        .name = _("Líbero"),
+        .description = COMPOUND_STRING("Cambia tipo al mov. usado."),
     },
 
     [ABILITY_BALL_FETCH] =
     {
-        .name = _("Ball Fetch"),
-        .description = COMPOUND_STRING("Fetches failed Poké Ball."),
+        .name = _("Recogebolas"),
+        .description = COMPOUND_STRING("Recupera Poké Balls."),
     },
 
     [ABILITY_COTTON_DOWN] =
     {
-        .name = _("Cotton Down"),
-        .description = COMPOUND_STRING("Lower Speed of all when hit."),
+        .name = _("Pelusa"),
+        .description = COMPOUND_STRING("Baja Vel. todos al cont."),
     },
 
     [ABILITY_PROPELLER_TAIL] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Propeller Tail"),
+        .name = _("Hélice Caudal"),
     #else
         .name = _("PropellrTail"),
     #endif
-        .description = COMPOUND_STRING("Ignores foe's redirection."),
+        .description = COMPOUND_STRING("Ignora cambio de pos."),
     },
 
     [ABILITY_MIRROR_ARMOR] =
     {
-        .name = _("Mirror Armor"),
-        .description = COMPOUND_STRING("Reflect stat decreases."),
+        .name = _("Coraza Reflejo"),
+        .description = COMPOUND_STRING("Devuelve disminución est."),
     },
 
     [ABILITY_GULP_MISSILE] =
     {
-        .name = _("Gulp Missile"),
-        .description = COMPOUND_STRING("If hit, spits prey from sea."),
+        .name = _("Tragamisil"),
+        .description = COMPOUND_STRING("Escupe presa si golpeado."),
     },
 
     [ABILITY_STALWART] =
     {
-        .name = _("Stalwart"),
-        .description = COMPOUND_STRING("Ignores foe's redirection."),
+        .name = _("Acérrimo"),
+        .description = COMPOUND_STRING("Ignora cambio de pos."),
     },
 
     [ABILITY_STEAM_ENGINE] =
     {
-        .name = _("Steam Engine"),
-        .description = COMPOUND_STRING("Fire or Water hits up Speed."),
+        .name = _("Combustible"),
+        .description = COMPOUND_STRING("Sube Vel. con Fuego y Agua."),
     },
 
     [ABILITY_PUNK_ROCK] =
     {
         .name = _("Punk Rock"),
-        .description = COMPOUND_STRING("Ups and resists sound."),
+        .description = COMPOUND_STRING("Sube y resiste sonido."),
     },
 
     [ABILITY_SAND_SPIT] =
     {
-        .name = _("Sand Spit"),
-        .description = COMPOUND_STRING("Creates a sandstorm if hit."),
+        .name = _("Expulsarena"),
+        .description = COMPOUND_STRING("T. Arena si lo golpean."),
     },
 
     [ABILITY_ICE_SCALES] =
     {
-        .name = _("Ice Scales"),
-        .description = COMPOUND_STRING("Halves special damage."),
+        .name = _("Escama Hielo"),
+        .description = COMPOUND_STRING("Reduce daño especial."),
     },
 
     [ABILITY_RIPEN] =
     {
-        .name = _("Ripen"),
-        .description = COMPOUND_STRING("Doubles effect of Berries."),
+        .name = _("Maduración"),
+        .description = COMPOUND_STRING("Duplica efecto de bayas."),
     },
 
     [ABILITY_ICE_FACE] =
     {
-        .name = _("Ice Face"),
-        .description = COMPOUND_STRING("Hail or Snow renew free hit."),
+        .name = _("Cara Hielo"),
+        .description = COMPOUND_STRING("Cara regenera con Granizo."),
     },
 
     [ABILITY_POWER_SPOT] =
     {
-        .name = _("Power Spot"),
-        .description = COMPOUND_STRING("Powers up ally moves."),
+        .name = _("Fuente Energía"),
+        .description = COMPOUND_STRING("Potencia mov. aliados."),
     },
 
     [ABILITY_MIMICRY] =
     {
-        .name = _("Mimicry"),
-        .description = COMPOUND_STRING("Changes type on terrain."),
+        .name = _("Mimetismo"),
+        .description = COMPOUND_STRING("Cambia tipo al campo."),
     },
 
     [ABILITY_SCREEN_CLEANER] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Screen Cleaner"),
+        .name = _("Antibarrera"),
     #else
         .name = _("ScreenCleanr"),
     #endif
-        .description = COMPOUND_STRING("Removes walls of light."),
+        .description = COMPOUND_STRING("Elimina las barreras."),
     },
 
     [ABILITY_STEELY_SPIRIT] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Steely Spirit"),
+        .name = _("Alma Acerada"),
     #else
-        .name = _("SteelySpirit"),
+        .name = _("Alma Acerada"),
     #endif
-        .description = COMPOUND_STRING("Boosts ally's Steel moves."),
+        .description = COMPOUND_STRING("Pot. mov. Acero aliado."),
     },
 
     [ABILITY_PERISH_BODY] =
     {
-        .name = _("Perish Body"),
-        .description = COMPOUND_STRING("Foe faints in 3 turns if hit."),
+        .name = _("Cuerpo mortal"),
+        .description = COMPOUND_STRING("Deb. al rival en 3 turnos."),
     },
 
     [ABILITY_WANDERING_SPIRIT] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Wandering Spirit"),
+        .name = _("Alma Errante"),
     #else
         .name = _("WandrngSprit"),
     #endif
-        .description = COMPOUND_STRING("Trade abilities on contact."),
+        .description = COMPOUND_STRING("Cambia hab. al contacto."),
     },
 
     [ABILITY_GORILLA_TACTICS] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Gorilla Tactics"),
+        .name = _("Monotema"),
     #else
         .name = _("GorillaTacti"),
     #endif
-        .description = COMPOUND_STRING("Ups Attack and locks move."),
+        .description = COMPOUND_STRING("Sube At. e impide otros."),
     },
 
     [ABILITY_NEUTRALIZING_GAS] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Neutralizing Gas"),
+        .name = _("Gas Reactivo"),
     #else
         .name = _("NeutrlzngGas"),
     #endif
-        .description = COMPOUND_STRING("All Abilities are nullified."),
+        .description = COMPOUND_STRING("Desactiva todas las hab."),
     },
 
     [ABILITY_PASTEL_VEIL] =
     {
-        .name = _("Pastel Veil"),
-        .description = COMPOUND_STRING("Protects team from poison."),
+        .name = _("Velo Pastel"),
+        .description = COMPOUND_STRING("Protege bando del veneno."),
     },
 
     [ABILITY_HUNGER_SWITCH] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Hunger Switch"),
+        .name = _("Mutapetito"),
     #else
-        .name = _("HungerSwitch"),
+        .name = _("Mutapetito"),
     #endif
-        .description = COMPOUND_STRING("Changes form each turn."),
+        .description = COMPOUND_STRING("Cambia forma cada turno."),
     },
 
     [ABILITY_QUICK_DRAW] =
     {
-        .name = _("Quick Draw"),
-        .description = COMPOUND_STRING("Moves first occasionally."),
+        .name = _("Mano Rápida"),
+        .description = COMPOUND_STRING("A veces se mueve primero."),
     },
 
     [ABILITY_UNSEEN_FIST] =
     {
-        .name = _("Unseen Fist"),
-        .description = COMPOUND_STRING("Contact evades protection."),
+        .name = _("Puño Invisible"),
+        .description = COMPOUND_STRING("Evade protección con fís."),
     },
 
     [ABILITY_CURIOUS_MEDICINE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Curious Medicine"),
+        .name = _("Medicina Extraña"),
     #else
         .name = _("CuriusMedicn"),
     #endif
-        .description = COMPOUND_STRING("Remove ally's stat changes."),
+        .description = COMPOUND_STRING("Anula camb. estad. aliado."),
     },
 
     [ABILITY_TRANSISTOR] =
     {
         .name = _("Transistor"),
-        .description = COMPOUND_STRING("Ups Electric-type moves."),
+        .description = COMPOUND_STRING("Potencia mov. Eléctricos."),
     },
 
     [ABILITY_DRAGONS_MAW] =
@@ -1695,17 +1695,17 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     [ABILITY_CHILLING_NEIGH] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Chilling Neigh"),
+        .name = _("Relincho Blanco"),
     #else
         .name = _("ChillngNeigh"),
     #endif
-        .description = COMPOUND_STRING("KOs boost Attack stat."),
+        .description = COMPOUND_STRING("KOs suben Ataque."),
     },
 
     [ABILITY_GRIM_NEIGH] =
     {
-        .name = _("Grim Neigh"),
-        .description = COMPOUND_STRING("KOs boost Sp. Atk stat."),
+        .name = _("Relincho Negro"),
+        .description = COMPOUND_STRING("KOs suben At. Esp."),
     },
 
     [ABILITY_AS_ONE_ICE_RIDER] =
@@ -1723,43 +1723,43 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     [ABILITY_LINGERING_AROMA] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Lingering Aroma"),
+        .name = _("Olor Persistente"),
     #else
         .name = _("LngerngAroma"),
     #endif
-        .description = COMPOUND_STRING("Spreads with contact."),
+        .description = COMPOUND_STRING("Se propaga con contacto."),
     },
 
     [ABILITY_SEED_SOWER] =
     {
-        .name = _("Seed Sower"),
-        .description = COMPOUND_STRING("Affects terrain when hit."),
+        .name = _("Disemillar"),
+        .description = COMPOUND_STRING("Camb. terreno al ser golp."),
     },
 
     [ABILITY_THERMAL_EXCHANGE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Thermal Exchange"),
+        .name = _("Termoconversión"),
     #else
         .name = _("ThrmlExchnge"),
     #endif
-        .description = COMPOUND_STRING("Fire hits up Attack."),
+        .description = COMPOUND_STRING("El fuego aumenta el ataque."),
     },
 
     [ABILITY_ANGER_SHELL] =
     {
-        .name = _("Anger Shell"),
-        .description = COMPOUND_STRING("Gets angry at half HP."),
+        .name = _("Coraza Ira"),
+        .description = COMPOUND_STRING("Se enfada a mitad de PS."),
     },
 
     [ABILITY_PURIFYING_SALT] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Purifying Salt"),
+        .name = _("Sal Purificadora"),
     #else
         .name = _("PurfyingSalt"),
     #endif
-        .description = COMPOUND_STRING("Protected by pure salts."),
+        .description = COMPOUND_STRING("Protección de sales puras."),
     },
 
     [ABILITY_WELL_BAKED_BODY] =
@@ -1774,74 +1774,74 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
 
     [ABILITY_WIND_RIDER] =
     {
-        .name = _("Wind Rider"),
-        .description = COMPOUND_STRING("Ups Attack if hit by wind."),
+        .name = _("Surcavientos"),
+        .description = COMPOUND_STRING("Áereo aumenta el ataque."),
     },
 
     [ABILITY_GUARD_DOG] =
     {
-        .name = _("Guard Dog"),
-        .description = COMPOUND_STRING("Cannot be intimidated."),
+        .name = _("Perro Guardián"),
+        .description = COMPOUND_STRING("Imposible de intimidar."),
     },
 
     [ABILITY_ROCKY_PAYLOAD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Rocky Payload"),
+        .name = _("Transportarrocas"),
     #else
-        .name = _("RockyPayload"),
+        .name = _("Transportarrocas"),
     #endif
-        .description = COMPOUND_STRING("Powers up Rock moves."),
+        .description = COMPOUND_STRING("Potencia movs. de roca."),
     },
 
     [ABILITY_WIND_POWER] =
     {
-        .name = _("Wind Power"),
-        .description = COMPOUND_STRING("Gets charged by wind."),
+        .name = _("Energía Eólica"),
+        .description = COMPOUND_STRING("Rec. energía con el aire."),
     },
 
     [ABILITY_ZERO_TO_HERO] =
     {
         .name = _("Zero to Hero"),
-        .description = COMPOUND_STRING("Changes form on switch out."),
+        .description = COMPOUND_STRING("Cambia de forma al salir."),
     },
 
     [ABILITY_COMMANDER] =
     {
-        .name = _("Commander"),
-        .description = COMPOUND_STRING("Commands from Dondozo."),
+        .name = _("Comandar"),
+        .description = COMPOUND_STRING("Da órdenes a Dondozo."),
     },
 
     [ABILITY_ELECTROMORPHOSIS] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Electromorphosis"),
+        .name = _("Dinamo"),
     #else
         .name = _("Elecmrphosis"),
     #endif
-        .description = COMPOUND_STRING("Gets Charged on contact."),
+        .description = COMPOUND_STRING("Se recarga al contacto."),
     },
 
     [ABILITY_PROTOSYNTHESIS] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Protosynthesis"),
+        .name = _("Paleosíntesis"),
     #else
         .name = _("Protosnthsis"),
     #endif
-        .description = COMPOUND_STRING("Sun boosts best stat."),
+        .description = COMPOUND_STRING("Sol mejora su mejor stat."),
     },
 
     [ABILITY_QUARK_DRIVE] =
     {
-        .name = _("Quark Drive"),
-        .description = COMPOUND_STRING("Elec. field ups best stat."),
+        .name = _("Carga Cuark"),
+        .description = COMPOUND_STRING("Camp.Elec.Aum. mejor stat."),
     },
 
     [ABILITY_GOOD_AS_GOLD] =
     {
         .name = _("Good as Gold"),
-        .description = COMPOUND_STRING("Avoids status problems."),
+        .description = COMPOUND_STRING("Evita problemas de estado."),
     },
 
     [ABILITY_VESSEL_OF_RUIN] =
@@ -1851,7 +1851,7 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     #else
         .name = _("VesselOfRuin"),
     #endif
-        .description = COMPOUND_STRING("Lowers foes' sp. damage."),
+        .description = COMPOUND_STRING("Reduce atq. esp. rival."),
     },
 
     [ABILITY_SWORD_OF_RUIN] =
@@ -1861,7 +1861,7 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     #else
         .name = _("SwordOfRuin"),
     #endif
-        .description = COMPOUND_STRING("Lowers foes' defense."),
+        .description = COMPOUND_STRING("Reduce defensa rival."),
     },
 
     [ABILITY_TABLETS_OF_RUIN] =
@@ -1871,7 +1871,7 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     #else
         .name = _("TabltsOfRuin"),
     #endif
-        .description = COMPOUND_STRING("Lowers foes' damage."),
+        .description = COMPOUND_STRING("Reduce ataque rival."),
     },
 
     [ABILITY_BEADS_OF_RUIN] =
@@ -1881,188 +1881,188 @@ const struct Ability gAbilities[ABILITIES_COUNT] =
     #else
         .name = _("BeadsOfRuin"),
     #endif
-        .description = COMPOUND_STRING("Lowers foes' sp. defense."),
+        .description = COMPOUND_STRING("Reduce la def. esp. rival."),
     },
 
     [ABILITY_ORICHALCUM_PULSE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Orichalcum Pulse"),
+        .name = _("Latido oricalco"),
     #else
         .name = _("OrchlcumPlse"),
     #endif
-        .description = COMPOUND_STRING("Summons sunlight in battle."),
+        .description = COMPOUND_STRING("Invoca el sol en combate."),
     },
 
     [ABILITY_HADRON_ENGINE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Hadron Engine"),
+        .name = _("Motor Hadrónico"),
     #else
-        .name = _("HadronEngine"),
+        .name = _("Motor Hadrónico"),
     #endif
-        .description = COMPOUND_STRING("Field becomes Electric."),
+        .description = COMPOUND_STRING("El Campo se transf. Elect."),
     },
 
     [ABILITY_OPPORTUNIST] =
     {
-        .name = _("Opportunist"),
-        .description = COMPOUND_STRING("Copies foe's stat change."),
+        .name = _("Oportunista"),
+        .description = COMPOUND_STRING("Copia cambios stats riv."),
     },
 
     [ABILITY_CUD_CHEW] =
     {
-        .name = _("Cud Chew"),
-        .description = COMPOUND_STRING("Eats a used berry again."),
+        .name = _("Rumia"),
+        .description = COMPOUND_STRING("Consume una baya ya usada."),
     },
 
     [ABILITY_SHARPNESS] =
     {
-        .name = _("Sharpness"),
-        .description = COMPOUND_STRING("Strengthens slicing moves."),
+        .name = _("Cortante"),
+        .description = COMPOUND_STRING("Pot. Movs. de corte."),
     },
 
     [ABILITY_SUPREME_OVERLORD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Supreme Overlord"),
+        .name = _("General Supremo"),
     #else
         .name = _("SuprmeOvrlrd"),
     #endif
-        .description = COMPOUND_STRING("Inherits fallen's strength."),
+        .description = COMPOUND_STRING("Rec. fuerza de los caidos."),
     },
 
     [ABILITY_COSTAR] =
     {
-        .name = _("Costar"),
-        .description = COMPOUND_STRING("Copies ally's stat changes."),
+        .name = _("Unísono"),
+        .description = COMPOUND_STRING("Copia camb. stats aliados."),
     },
 
     [ABILITY_TOXIC_DEBRIS] =
     {
-        .name = _("Toxic Debris"),
-        .description = COMPOUND_STRING("Throws poison spikes if hit."),
+        .name = _("Capa Tóxica"),
+        .description = COMPOUND_STRING("Al golp. caen puás tóx."),
     },
 
     [ABILITY_ARMOR_TAIL] =
     {
-        .name = _("Armor Tail"),
-        .description = COMPOUND_STRING("Protects from priority."),
+        .name = _("Cola Armadura"),
+        .description = COMPOUND_STRING("Protege de la prioridad."),
     },
 
     [ABILITY_EARTH_EATER] =
     {
-        .name = _("Earth Eater"),
-        .description = COMPOUND_STRING("Eats ground to heal HP."),
+        .name = _("Geofagia"),
+        .description = COMPOUND_STRING("Come tierra para curarse."),
     },
 
     [ABILITY_MYCELIUM_MIGHT] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Mycelium Might"),
+        .name = _("Poder Fúngico"),
     #else
         .name = _("MceliumMight"),
     #endif
-        .description = COMPOUND_STRING("Status moves never fail."),
+        .description = COMPOUND_STRING("Movs. de estado no fallan."),
     },
 
     [ABILITY_HOSPITALITY] =
     {
-        .name = _("Hospitality"),
-        .description = COMPOUND_STRING("Restores ally's HP."),
+        .name = _("Hospitalidad"),
+        .description = COMPOUND_STRING("Recupera PS aliados."),
     },
 
     [ABILITY_MINDS_EYE] =
     {
-        .name = _("Mind's Eye"),
-        .description = COMPOUND_STRING("Keen Eye and Scrappy."),
+        .name = _("Ojo Mental"),
+        .description = COMPOUND_STRING("V. lince e Intrépido."),
     },
 
     [ABILITY_EMBODY_ASPECT_TEAL] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Embody Aspect"),
+        .name = _("Evocarrec."),
     #else
         .name = _("EmbodyAspect"),
     #endif
-        .description = COMPOUND_STRING("Raises Speed."),
+        .description = COMPOUND_STRING("Aumenta Veloc."),
     },
 
     [ABILITY_EMBODY_ASPECT_HEARTHFLAME] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Embody Aspect"),
+        .name = _("Evocarrec."),
     #else
         .name = _("EmbodyAspect"),
     #endif
-        .description = COMPOUND_STRING("Raises Attack."),
+        .description = COMPOUND_STRING("Aumenta Ataque."),
     },
 
     [ABILITY_EMBODY_ASPECT_WELLSPRING] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Embody Aspect"),
+        .name = _("Evocarrec."),
     #else
         .name = _("EmbodyAspect"),
     #endif
-        .description = COMPOUND_STRING("Raises Sp. Def."),
+        .description = COMPOUND_STRING("Aumenta Def. Esp."),
     },
 
     [ABILITY_EMBODY_ASPECT_CORNERSTONE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Embody Aspect"),
+        .name = _("Evocarrec."),
     #else
         .name = _("EmbodyAspect"),
     #endif
-        .description = COMPOUND_STRING("Raises Defense."),
+        .description = COMPOUND_STRING("Aumenta Defensa."),
     },
 
     [ABILITY_TOXIC_CHAIN] =
     {
-        .name = _("Toxic Chain"),
-        .description = COMPOUND_STRING("Moves can poison."),
+        .name = _("Cadena Tóxica"),
+        .description = COMPOUND_STRING("Movs. pueden envenenar."),
     },
 
     [ABILITY_SUPERSWEET_SYRUP] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Supersweet Syrup"),
+        .name = _("Néctar Dulce"),
     #else
         .name = _("SuprswtSyrup"),
     #endif
-        .description = COMPOUND_STRING("Lowers the foe's Speed."),
+        .description = COMPOUND_STRING("Baja la veloc. rival."),
     },
 
     [ABILITY_TERA_SHIFT] =
     {
-        .name = _("Tera Shift"),
-        .description = COMPOUND_STRING("Terasteralizes upon entry."),
+        .name = _("Teracambio"),
+        .description = COMPOUND_STRING("Tera. al entrar."),
     },
 
     [ABILITY_TERA_SHELL] =
     {
-        .name = _("Tera Shell"),
-        .description = COMPOUND_STRING("Resistant to types at full HP."),
+        .name = _("Teracaparazón"),
+        .description = COMPOUND_STRING("Res. tipos con PS completo."),
     },
 
     [ABILITY_TERAFORM_ZERO] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Teraform Zero"),
+        .name = _("Teraform. 0"),
     #else
-        .name = _("TeraformZero"),
+        .name = _("Teraform Zero"),
     #endif
-        .description = COMPOUND_STRING("Removes weather and terrain."),
+        .description = COMPOUND_STRING("Elimina clima y terreno."),
     },
 
     [ABILITY_POISON_PUPPETEER] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Poison Puppeteer"),
+        .name = _("Títere tóxico"),
     #else
         .name = _("PoisnPuppter"),
     #endif
-        .description = COMPOUND_STRING("Confuses poisoned foes."),
+        .description = COMPOUND_STRING("Confunde si envenena."),
     },
 };
