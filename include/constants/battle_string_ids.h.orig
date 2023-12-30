@@ -698,8 +698,11 @@
 #define STRINGID_HOSPITALITYRESTORATION               697
 #define STRINGID_ELECTROSHOCKCHARGING                 698
 
-#define STRINGID_DOT                                  699
-#define BATTLESTRINGS_COUNT                           700
+<<<<<<< HEAD
+#define STRINGID_DOT                                  698
+=======
+>>>>>>> cc32e378d663467f9a549e7f7a3dfd5cf39d6e3e
+#define BATTLESTRINGS_COUNT                           699
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

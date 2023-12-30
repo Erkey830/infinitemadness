@@ -838,6 +838,7 @@ static const u8 sText_Trainer2LoseText[];
     static const u8 sText_TheSeaOfFireDisappeared[] = _("El mar de fuego alrededor del equipo {B_ATK_TEAM2}\ndesapareció.");
     static const u8 sText_SwampEnvelopedSide[] = _("Un pantano envolvió\nal equipo {B_DEF_TEAM2}.");
     static const u8 sText_TheSwampDisappeared[] = _("El pantano alrededor del equipo {B_ATK_TEAM2}\ndesapareció.");
+static const u8 sText_ElectroShockCharging[] = _("{B_ATK_NAME_WITH_PREFIX} absobi� la\nelectricidad!");
     static const u8 sText_HospitalityRestoration[] = _("¡{B_ATK_PARTNER_NAME} se bebió todo\nel té que Sinistea preparó!");
 
 static const u8 sText_Dot[] = _(".");
@@ -845,6 +846,7 @@ static const u8 sText_Dot[] = _(".");
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
     [STRINGID_DOT - BATTLESTRINGS_TABLE_START] = sText_Dot,
+    [STRINGID_ELECTROSHOCKCHARGING - BATTLESTRINGS_TABLE_START] = sText_ElectroShockCharging,
     [STRINGID_HOSPITALITYRESTORATION - BATTLESTRINGS_TABLE_START] = sText_HospitalityRestoration,
     [STRINGID_THESWAMPDISAPPEARED - BATTLESTRINGS_TABLE_START] = sText_TheSwampDisappeared,
     [STRINGID_SWAMPENVELOPEDSIDE - BATTLESTRINGS_TABLE_START] = sText_SwampEnvelopedSide,
@@ -1772,6 +1774,7 @@ const u16 gFirstTurnOfTwoStringIds[] =
     [B_MSG_TURN1_FREEZE_SHOCK]  = STRINGID_CLOAKEDINAFREEZINGLIGHT,
     [B_MSG_TURN1_SKY_DROP]      = STRINGID_PKMNTOOKTARGETHIGH,
     [B_MSG_TURN1_METEOR_BEAM]   = STRINGID_METEORBEAMCHARGING,
+    [B_MSG_TURN1_ELECTRO_SHOCK] = STRINGID_ELECTROSHOCKCHARGING,
 };
 
 // Index copied from move's index in sTrappingMoves
